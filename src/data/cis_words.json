@@ -1,0 +1,4092 @@
+{
+  "programming": {
+    "fundamentals": {
+      "basic_concepts": [
+        {
+          "word": "program",
+          "meaning": "Program (โปรแกรม): ชุดคำสั่งที่คอมพิวเตอร์ทำตามเพื่อให้เกิดผลลัพธ์"
+        },
+        {
+          "word": "code",
+          "meaning": "Code (โค้ด): ข้อความที่เขียนเพื่อสั่งงานคอมพิวเตอร์"
+        },
+        {
+          "word": "execute",
+          "meaning": "Execute (รันโปรแกรม): การสั่งให้คอมพิวเตอร์ทำงานตามโค้ด"
+        },
+        {
+          "word": "compile",
+          "meaning": "Compile (คอมไพล์): แปลงโค้ดเป็นภาษาที่คอมพิวเตอร์เข้าใจ"
+        },
+        {
+          "word": "debug",
+          "meaning": "Debug (ดีบัก): การหาข้อผิดพลาดและแก้ไขในโปรแกรม"
+        }
+      ],
+      "syntax_rules": [
+        {
+          "word": "statement",
+          "meaning": "Statement (คำสั่ง): โค้ดแต่ละบรรทัดที่สั่งให้คอมพิวเตอร์ทำงาน"
+        },
+        {
+          "word": "semicolon",
+          "meaning": "Semicolon (อัฒภาค): ใช้ปิดท้ายคำสั่งในบางภาษา เช่น C หรือ Java"
+        },
+        {
+          "word": "block",
+          "meaning": "Block (บล็อก): กลุ่มคำสั่งที่ทำงานร่วมกัน"
+        },
+        {
+          "word": "comment",
+          "meaning": "Comment (คำอธิบาย): ข้อความในโค้ดที่ไม่ถูกรัน"
+        },
+        {
+          "word": "indentation",
+          "meaning": "Indentation (การเยื้องบรรทัด): ช่วยให้โค้ดอ่านง่ายและเป็นระเบียบ"
+        }
+      ],
+      "input_output": [
+        {
+          "word": "input",
+          "meaning": "Input (อินพุต): ข้อมูลที่ผู้ใช้ป้อนเข้ามาในโปรแกรม"
+        },
+        {
+          "word": "output",
+          "meaning": "Output (เอาต์พุต): ผลลัพธ์ที่โปรแกรมแสดงออกมา"
+        },
+        {
+          "word": "print",
+          "meaning": "Print (พิมพ์ผลลัพธ์): คำสั่งแสดงข้อความบนหน้าจอ"
+        },
+        {
+          "word": "read",
+          "meaning": "Read (อ่านข้อมูล): รับข้อมูลจากผู้ใช้หรือไฟล์"
+        },
+        {
+          "word": "write",
+          "meaning": "Write (เขียนข้อมูล): บันทึกข้อมูลลงไฟล์"
+        }
+      ],
+      "programming_environment": [
+        {
+          "word": "editor",
+          "meaning": "Editor (เครื่องมือเขียนโค้ด): โปรแกรมที่ใช้พิมพ์และแก้ไขโค้ด"
+        },
+        {
+          "word": "terminal_command",
+          "meaning": "Terminal Command (คำสั่งเทอร์มินัล): คำสั่งที่ใช้รันโปรแกรม"
+        },
+        {
+          "word": "run_button",
+          "meaning": "Run Button (ปุ่มรัน): ปุ่มใน IDE สำหรับเริ่มโปรแกรม"
+        },
+        {
+          "word": "project_folder",
+          "meaning": "Project Folder (โฟลเดอร์โปรเจกต์): ที่เก็บไฟล์ทั้งหมดของโปรแกรม"
+        }
+      ],
+      "execution_process": [
+        {
+          "word": "interpreter_language",
+          "meaning": "Interpreter Language (ภาษาที่รันทันที): เช่น Python ที่ไม่ต้องคอมไพล์"
+        },
+        {
+          "word": "compiled_language",
+          "meaning": "Compiled Language (ภาษาที่ต้องคอมไพล์): เช่น C, Java"
+        },
+        {
+          "word": "runtime",
+          "meaning": "Runtime (ช่วงเวลารัน): ช่วงเวลาที่โปรแกรมกำลังทำงาน"
+        },
+        {
+          "word": "execution_error",
+          "meaning": "Execution Error (ข้อผิดพลาดระหว่างรัน): เกิดขึ้นเมื่อโปรแกรมทำงานผิดพลาด"
+        }
+      ],
+      "program_lifecycle": [
+        {
+          "word": "keyword",
+          "meaning": "Keyword (คำสงวน): คำที่มีความหมายเฉพาะในภาษาโปรแกรม"
+        },
+        {
+          "word": "expression",
+          "meaning": "Expression (นิพจน์): ส่วนของโค้ดที่คำนวณค่าได้"
+        },
+        {
+          "word": "condition",
+          "meaning": "Condition (เงื่อนไข): ใช้ตรวจสอบก่อนทำงานในโค้ด"
+        },
+        {
+          "word": "syntax_error",
+          "meaning": "Syntax Error (ข้อผิดพลาดไวยากรณ์): เขียนโค้ดผิดรูปแบบ"
+        }
+      ]
+    },
+    "data_types": {
+      "primitive_types": [
+        {
+          "word": "integer",
+          "meaning": "Integer (จำนวนเต็ม): ตัวเลขไม่มีทศนิยม"
+        },
+        {
+          "word": "float",
+          "meaning": "Float (ทศนิยม): ตัวเลขที่มีจุดทศนิยม"
+        },
+        {
+          "word": "string",
+          "meaning": "String (สตริง): ข้อความ เช่น 'Hello'"
+        },
+        {
+          "word": "boolean",
+          "meaning": "Boolean (บูลีน): ค่าจริงหรือเท็จ (True/False)"
+        },
+        {
+          "word": "char",
+          "meaning": "Char (อักขระ): ตัวอักษรเพียงตัวเดียว"
+        }
+      ],
+      "collection_types": [
+        {
+          "word": "array",
+          "meaning": "Array (อาเรย์): กลุ่มข้อมูลชนิดเดียวกัน"
+        },
+        {
+          "word": "list",
+          "meaning": "List (ลิสต์): กลุ่มข้อมูลที่เพิ่ม/ลบค่าได้"
+        },
+        {
+          "word": "tuple",
+          "meaning": "Tuple (ทูเพิล): กลุ่มข้อมูลที่เปลี่ยนไม่ได้"
+        },
+        {
+          "word": "set",
+          "meaning": "Set (เซต): กลุ่มข้อมูลที่ไม่มีค่าซ้ำ"
+        },
+        {
+          "word": "dictionary",
+          "meaning": "Dictionary (ดิกชันนารี): คู่ข้อมูล key-value"
+        }
+      ],
+      "type_conversion": [
+        {
+          "word": "casting",
+          "meaning": "Casting (การแปลงชนิดข้อมูล): การเปลี่ยนชนิดข้อมูลหนึ่งไปอีกชนิดหนึ่ง"
+        },
+        {
+          "word": "parse",
+          "meaning": "Parse (แปลงข้อมูล): การอ่านข้อความให้เป็นข้อมูลที่ใช้ได้"
+        },
+        {
+          "word": "format",
+          "meaning": "Format (จัดรูปแบบ): การจัดข้อความให้แสดงผลตามต้องการ"
+        }
+      ],
+      "constants": [
+        {
+          "word": "constant",
+          "meaning": "Constant (ค่าคงที่): ค่าที่ไม่เปลี่ยนระหว่างรันโปรแกรม"
+        },
+        {
+          "word": "variable",
+          "meaning": "Variable (ตัวแปร): ใช้เก็บค่าที่สามารถเปลี่ยนได้"
+        },
+        {
+          "word": "type_hint",
+          "meaning": "Type Hint (ระบุชนิดข้อมูล): บอกให้โปรแกรมรู้ชนิดของข้อมูลล่วงหน้า"
+        }
+      ]
+    },
+    "control_flow": {
+      "conditional_statements": [
+        {
+          "word": "if",
+          "meaning": "If (ถ้า): ตรวจสอบเงื่อนไขก่อนทำงาน"
+        },
+        {
+          "word": "else",
+          "meaning": "Else (มิฉะนั้น): ทำงานเมื่อเงื่อนไขไม่เป็นจริง"
+        },
+        {
+          "word": "elif",
+          "meaning": "Elif (ถ้าอีกกรณี): ตรวจสอบเงื่อนไขเพิ่มเติม"
+        },
+        {
+          "word": "switch",
+          "meaning": "Switch (เลือกหลายกรณี): ใช้แทน if หลายชั้น"
+        }
+      ],
+      "loops": [
+        {
+          "word": "for",
+          "meaning": "For Loop (วนรอบ): ทำซ้ำตามจำนวนรอบ"
+        },
+        {
+          "word": "while",
+          "meaning": "While Loop (วนซ้ำตามเงื่อนไข): ทำซ้ำจนกว่าเงื่อนไขจะเท็จ"
+        },
+        {
+          "word": "break",
+          "meaning": "Break (หยุดลูป): หยุดการทำงานของลูปก่อนครบ"
+        },
+        {
+          "word": "continue",
+          "meaning": "Continue (ข้ามรอบ): ข้ามไปยังรอบถัดไปของลูป"
+        }
+      ],
+      "error_handling": [
+        {
+          "word": "try",
+          "meaning": "Try (ลองทำ): ใช้ตรวจสอบข้อผิดพลาดในโค้ด"
+        },
+        {
+          "word": "except",
+          "meaning": "Except (จัดการข้อผิดพลาด): ทำงานเมื่อเกิดข้อผิดพลาด"
+        },
+        {
+          "word": "finally",
+          "meaning": "Finally (สุดท้าย): ทำงานทุกครั้งไม่ว่ามีข้อผิดพลาดหรือไม่"
+        }
+      ],
+      "loop_variables": [
+        {
+          "word": "loop_variable",
+          "meaning": "Loop Variable (ตัวแปรลูป): ตัวแปรที่ใช้ในลูปเพื่อเก็บค่าปัจจุบัน"
+        },
+        {
+          "word": "nested_loop",
+          "meaning": "Nested Loop (ลูปซ้อน): ลูปที่อยู่ภายในลูปอีกชั้น"
+        },
+        {
+          "word": "infinite_loop",
+          "meaning": "Infinite Loop (ลูปไม่สิ้นสุด): ลูปที่ทำงานโดยไม่มีเงื่อนไขหยุด"
+        }
+      ]
+    },
+    "functions": {
+      "definition": [
+        {
+          "word": "function",
+          "meaning": "Function (ฟังก์ชัน): กลุ่มคำสั่งที่ทำงานเฉพาะด้าน"
+        },
+        {
+          "word": "def",
+          "meaning": "Def (ประกาศฟังก์ชัน): คำสั่งสร้างฟังก์ชันใน Python"
+        },
+        {
+          "word": "return",
+          "meaning": "Return (คืนค่า): ส่งค่ากลับจากฟังก์ชัน"
+        },
+        {
+          "word": "call",
+          "meaning": "Call (เรียกใช้): การใช้งานฟังก์ชัน"
+        }
+      ],
+      "parameters": [
+        {
+          "word": "parameter",
+          "meaning": "Parameter (พารามิเตอร์): ตัวแปรที่รับค่าขณะเรียกใช้"
+        },
+        {
+          "word": "argument",
+          "meaning": "Argument (อาร์กิวเมนต์): ค่าที่ส่งให้ฟังก์ชัน"
+        },
+        {
+          "word": "default_value",
+          "meaning": "Default Value (ค่าตั้งต้น): ใช้เมื่อไม่มีการส่งค่า"
+        }
+      ],
+      "scope": [
+        {
+          "word": "local",
+          "meaning": "Local Variable (ตัวแปรภายใน): ใช้ในฟังก์ชันเท่านั้น"
+        },
+        {
+          "word": "global",
+          "meaning": "Global Variable (ตัวแปรสากล): ใช้ได้ทั่วโปรแกรม"
+        },
+        {
+          "word": "recursion",
+          "meaning": "Recursion (เรียกซ้ำ): ฟังก์ชันที่เรียกตัวเอง"
+        }
+      ],
+      "returning": [
+        {
+          "word": "return_value",
+          "meaning": "Return Value (ค่าที่ส่งกลับ): ผลลัพธ์จากฟังก์ชัน"
+        },
+        {
+          "word": "none",
+          "meaning": "None (ไม่มีค่า): ใช้เมื่อฟังก์ชันไม่ส่งค่ากลับ"
+        },
+        {
+          "word": "lambda",
+          "meaning": "Lambda (ฟังก์ชันสั้น): ฟังก์ชันที่เขียนได้ในบรรทัดเดียว"
+        }
+      ]
+    },
+    "data_structure": {
+      "linear_structures": [
+        {
+          "word": "stack",
+          "meaning": "Stack (สแตก): โครงสร้างข้อมูลแบบเข้าหลังออกก่อน"
+        },
+        {
+          "word": "queue",
+          "meaning": "Queue (คิว): โครงสร้างข้อมูลแบบเข้าก่อนออกก่อน"
+        },
+        {
+          "word": "linked_list",
+          "meaning": "Linked List (ลิงก์ลิสต์): กลุ่มข้อมูลที่เชื่อมโยงกันเป็นโหนด"
+        }
+      ],
+      "nonlinear_structures": [
+        {
+          "word": "tree",
+          "meaning": "Tree (ต้นไม้): โครงสร้างข้อมูลแบบลำดับชั้น"
+        },
+        {
+          "word": "binary_tree",
+          "meaning": "Binary Tree (ต้นไม้ทวิภาค): โหนดมีลูกไม่เกินสอง"
+        },
+        {
+          "word": "graph",
+          "meaning": "Graph (กราฟ): โครงสร้างที่เก็บความสัมพันธ์ระหว่างโหนด"
+        }
+      ],
+      "operations": [
+        {
+          "word": "insert",
+          "meaning": "Insert (แทรก): เพิ่มข้อมูลเข้าโครงสร้าง"
+        },
+        {
+          "word": "delete",
+          "meaning": "Delete (ลบ): เอาข้อมูลออกจากโครงสร้าง"
+        },
+        {
+          "word": "traverse",
+          "meaning": "Traverse (เดินโครงสร้าง): อ่านข้อมูลทุกค่าในลำดับ"
+        }
+      ],
+      "advanced_structures": [
+        {
+          "word": "hash_table",
+          "meaning": "Hash Table (ตารางแฮช): โครงสร้างข้อมูลที่เข้าถึงข้อมูลได้รวดเร็ว"
+        },
+        {
+          "word": "heap",
+          "meaning": "Heap (ฮีป): โครงสร้างข้อมูลที่ใช้จัดลำดับความสำคัญ"
+        },
+        {
+          "word": "matrix",
+          "meaning": "Matrix (เมทริกซ์): ตารางข้อมูลสองมิติ"
+        },
+        {
+          "word": "stack_overflow",
+          "meaning": "Stack Overflow (การล้นสแตก): เมื่อหน่วยความจำล้นจากการเรียกซ้ำ"
+        }
+      ],
+      "structure_details": [
+        {
+          "word": "node",
+          "meaning": "Node (โหนด): หน่วยข้อมูลในโครงสร้าง เช่น linked list หรือ tree"
+        },
+        {
+          "word": "path",
+          "meaning": "Path (เส้นทาง): เส้นทางจากโหนดหนึ่งไปยังอีกโหนดใน graph"
+        },
+        {
+          "word": "queue_front",
+          "meaning": "Queue Front (หัวคิว): จุดที่ข้อมูลถูกนำออกจากคิว"
+        }
+      ]
+    },
+    "oop": {
+      "core_concepts": [
+        {
+          "word": "class",
+          "meaning": "Class (คลาส): แบบพิมพ์ของอ็อบเจกต์"
+        },
+        {
+          "word": "object",
+          "meaning": "Object (อ็อบเจกต์): สิ่งที่สร้างจากคลาส"
+        },
+        {
+          "word": "method",
+          "meaning": "Method (เมธอด): ฟังก์ชันที่อยู่ในคลาส"
+        }
+      ],
+      "principles": [
+        {
+          "word": "inheritance",
+          "meaning": "Inheritance (การสืบทอด): การนำคุณสมบัติของคลาสอื่นมาใช้"
+        },
+        {
+          "word": "encapsulation",
+          "meaning": "Encapsulation (การห่อหุ้ม): ป้องกันการเข้าถึงข้อมูลโดยตรง"
+        },
+        {
+          "word": "polymorphism",
+          "meaning": "Polymorphism (พหุรูป): เมธอดเดียวทำงานได้หลายแบบ"
+        },
+        {
+          "word": "abstraction",
+          "meaning": "Abstraction (นามธรรม): ซ่อนรายละเอียดที่ไม่จำเป็น"
+        }
+      ],
+      "examples": [
+        {
+          "word": "constructor",
+          "meaning": "Constructor (ตัวสร้าง): เมธอดที่ทำงานเมื่อสร้างอ็อบเจกต์"
+        },
+        {
+          "word": "attribute",
+          "meaning": "Attribute (คุณสมบัติ): ข้อมูลที่เก็บในอ็อบเจกต์"
+        }
+      ],
+      "relationships": [
+        {
+          "word": "association",
+          "meaning": "Association (ความสัมพันธ์): ความเชื่อมโยงระหว่างคลาส"
+        },
+        {
+          "word": "aggregation",
+          "meaning": "Aggregation (การรวมกัน): คลาสหนึ่งมีอีกคลาสหนึ่งเป็นส่วนหนึ่ง"
+        },
+        {
+          "word": "composition",
+          "meaning": "Composition (การประกอบ): คลาสหลักครอบคลาสย่อยไว้โดยตรง"
+        }
+      ],
+      "advanced_concepts": [
+        {
+          "word": "interface",
+          "meaning": "Interface (อินเทอร์เฟซ): กำหนดรูปแบบของเมธอดโดยไม่ต้องระบุการทำงาน"
+        },
+        {
+          "word": "static_method",
+          "meaning": "Static Method (เมธอดคงที่): เมธอดที่เรียกใช้ได้โดยไม่ต้องสร้างอ็อบเจกต์"
+        }
+      ]
+    },
+    "algorithms": {
+      "basic_algorithms": [
+        {
+          "word": "sorting",
+          "meaning": "Sorting (การเรียงลำดับ): การจัดข้อมูลให้อยู่ในลำดับ"
+        },
+        {
+          "word": "searching",
+          "meaning": "Searching (การค้นหา): การหาข้อมูลที่ต้องการ"
+        },
+        {
+          "word": "binary_search",
+          "meaning": "Binary Search (ค้นหาแบบทวิภาค): แบ่งครึ่งข้อมูลเพื่อลดเวลา"
+        }
+      ],
+      "complexity": [
+        {
+          "word": "time_complexity",
+          "meaning": "Time Complexity (ความซับซ้อนเวลา): วัดเวลาการทำงานของอัลกอริทึม"
+        },
+        {
+          "word": "space_complexity",
+          "meaning": "Space Complexity (ความซับซ้อนพื้นที่): วัดหน่วยความจำที่ใช้งาน"
+        }
+      ],
+      "patterns": [
+        {
+          "word": "recursion",
+          "meaning": "Recursion (การเรียกซ้ำ): อัลกอริทึมที่เรียกตัวเอง"
+        },
+        {
+          "word": "iteration",
+          "meaning": "Iteration (การวนซ้ำ): การทำซ้ำจนได้ผลลัพธ์"
+        },
+        {
+          "word": "divide_and_conquer",
+          "meaning": "Divide and Conquer (แบ่งแล้วจัดการ): แบ่งปัญหาเป็นส่วนย่อย"
+        }
+      ],
+      "search_algorithms": [
+        {
+          "word": "linear_search",
+          "meaning": "Linear Search (การค้นหาเชิงเส้น): ค้นหาทีละค่า"
+        },
+        {
+          "word": "depth_first_search",
+          "meaning": "Depth First Search (การค้นหาแบบลึกก่อน): สำรวจข้อมูลลึกสุดก่อน"
+        },
+        {
+          "word": "breadth_first_search",
+          "meaning": "Breadth First Search (การค้นหาแบบกว้างก่อน): สำรวจข้อมูลที่อยู่ใกล้ก่อน"
+        }
+      ]
+    },
+    "debugging_and_testing": {
+      "debugging_tools": [
+        {
+          "word": "log",
+          "meaning": "Log (บันทึก): แสดงข้อความเพื่อตรวจสอบการทำงาน"
+        },
+        {
+          "word": "breakpoint",
+          "meaning": "Breakpoint (จุดหยุด): หยุดโค้ดเพื่อดูค่าตัวแปร"
+        },
+        {
+          "word": "trace",
+          "meaning": "Trace (ติดตาม): ตรวจสอบการทำงานของโปรแกรม"
+        }
+      ],
+      "testing_types": [
+        {
+          "word": "unit_test",
+          "meaning": "Unit Test (ทดสอบหน่วย): ทดสอบฟังก์ชันหรือโมดูลย่อย"
+        },
+        {
+          "word": "integration_test",
+          "meaning": "Integration Test (ทดสอบรวม): ตรวจสอบการทำงานร่วมกันของส่วนต่าง ๆ"
+        },
+        {
+          "word": "system_test",
+          "meaning": "System Test (ทดสอบระบบ): ตรวจสอบทั้งระบบก่อนใช้งานจริง"
+        }
+      ],
+      "error_types": [
+        {
+          "word": "syntax_error",
+          "meaning": "Syntax Error (ข้อผิดพลาดไวยากรณ์): เขียนโค้ดผิดรูปแบบ"
+        },
+        {
+          "word": "runtime_error",
+          "meaning": "Runtime Error (ข้อผิดพลาดขณะรัน): เกิดขณะโปรแกรมทำงาน"
+        },
+        {
+          "word": "logic_error",
+          "meaning": "Logic Error (ข้อผิดพลาดตรรกะ): โปรแกรมรันได้แต่ผลลัพธ์ผิด"
+        }
+      ],
+      "testing_concepts": [
+        {
+          "word": "test_case",
+          "meaning": "Test Case (กรณีทดสอบ): ชุดข้อมูลใช้ตรวจสอบโปรแกรม"
+        },
+        {
+          "word": "assert",
+          "meaning": "Assert (ตรวจสอบค่า): ใช้ยืนยันผลลัพธ์ที่ควรเป็น"
+        },
+        {
+          "word": "mock",
+          "meaning": "Mock (จำลอง): จำลองส่วนของโปรแกรมเพื่อทดสอบ"
+        },
+        {
+          "word": "refactor",
+          "meaning": "Refactor (ปรับโครงสร้างโค้ด): แก้ไขโค้ดให้ดีขึ้นโดยไม่เปลี่ยนผลลัพธ์"
+        }
+      ]
+    },
+    "development_tools": {
+      "ides": [
+        {
+          "word": "vscode",
+          "meaning": "VS Code: โปรแกรมยอดนิยมสำหรับเขียนโค้ด"
+        },
+        {
+          "word": "pycharm",
+          "meaning": "PyCharm: IDE สำหรับภาษา Python"
+        },
+        {
+          "word": "eclipse",
+          "meaning": "Eclipse: IDE สำหรับ Java"
+        }
+      ],
+      "version_control": [
+        {
+          "word": "git",
+          "meaning": "Git: ระบบควบคุมเวอร์ชันของโค้ด"
+        },
+        {
+          "word": "github",
+          "meaning": "GitHub: เว็บไซต์เก็บโค้ดและทำงานร่วมกัน"
+        },
+        {
+          "word": "commit",
+          "meaning": "Commit: การบันทึกการเปลี่ยนแปลงของโค้ด"
+        }
+      ],
+      "automation": [
+        {
+          "word": "terminal",
+          "meaning": "Terminal (เทอร์มินัล): หน้าต่างคำสั่งที่ใช้รันโปรแกรม"
+        },
+        {
+          "word": "compiler",
+          "meaning": "Compiler (คอมไพเลอร์): แปลงโค้ดเป็นไฟล์ปฏิบัติการ"
+        },
+        {
+          "word": "interpreter",
+          "meaning": "Interpreter (อินเทอร์พรีเตอร์): รันโค้ดทีละบรรทัด"
+        },
+        {
+          "word": "build",
+          "meaning": "Build (การสร้างโปรแกรม): ขั้นตอนรวมโค้ดให้พร้อมใช้งาน"
+        }
+      ],
+      "tools_and_plugins": [
+        {
+          "word": "plugin",
+          "meaning": "Plugin (ปลั๊กอิน): ส่วนเสริมที่เพิ่มความสามารถให้โปรแกรม"
+        },
+        {
+          "word": "package_manager",
+          "meaning": "Package Manager (ตัวจัดการแพ็กเกจ): โปรแกรมที่ใช้ติดตั้งหรืออัปเดตไลบรารี"
+        }
+      ]
+    },
+    "best_practices": {
+      "code_quality": [
+        {
+          "word": "clean_code",
+          "meaning": "Clean Code (โค้ดสะอาด): เขียนโค้ดให้อ่านง่ายและเข้าใจได้เร็ว"
+        },
+        {
+          "word": "naming",
+          "meaning": "Naming (การตั้งชื่อ): ใช้ชื่อที่บอกหน้าที่ของตัวแปรหรือฟังก์ชัน"
+        },
+        {
+          "word": "commenting",
+          "meaning": "Commenting (คำอธิบาย): เพิ่มคำอธิบายในส่วนสำคัญของโค้ด"
+        }
+      ],
+      "efficiency": [
+        {
+          "word": "optimization",
+          "meaning": "Optimization (เพิ่มประสิทธิภาพ): ปรับโค้ดให้ทำงานเร็วขึ้น"
+        },
+        {
+          "word": "reuse",
+          "meaning": "Reuse (ใช้ซ้ำ): ใช้โค้ดเดิมแทนการเขียนใหม่"
+        },
+        {
+          "word": "modularization",
+          "meaning": "Modularization (แยกส่วน): แยกโค้ดเป็นโมดูลเพื่อจัดการง่าย"
+        }
+      ],
+      "collaboration": [
+        {
+          "word": "documentation",
+          "meaning": "Documentation (เอกสาร): เขียนอธิบายการทำงานของโปรแกรม"
+        },
+        {
+          "word": "code_review",
+          "meaning": "Code Review (ตรวจสอบโค้ด): ตรวจสอบความถูกต้องก่อนใช้งานจริง"
+        },
+        {
+          "word": "teamwork",
+          "meaning": "Teamwork (การทำงานเป็นทีม): การทำงานร่วมกับผู้อื่นในโครงการ"
+        }
+      ],
+      "maintainability": [
+        {
+          "word": "readability",
+          "meaning": "Readability (ความอ่านง่าย): เขียนโค้ดให้เข้าใจได้เร็ว"
+        },
+        {
+          "word": "maintainability",
+          "meaning": "Maintainability (บำรุงรักษาได้ง่าย): ออกแบบโค้ดให้ปรับปรุงได้ในอนาคต"
+        },
+        {
+          "word": "consistency",
+          "meaning": "Consistency (ความสม่ำเสมอ): ใช้รูปแบบโค้ดที่เหมือนกันทั่วโปรแกรม"
+        }
+      ],
+      "team_process": [
+        {
+          "word": "peer_review",
+          "meaning": "Peer Review (ตรวจโดยเพื่อนร่วมทีม): ให้ทีมช่วยตรวจโค้ดเพื่อหาข้อผิดพลาด"
+        },
+        {
+          "word": "code_style",
+          "meaning": "Code Style (รูปแบบโค้ด): แนวทางการเขียนโค้ดให้เป็นมาตรฐานเดียวกัน"
+        }
+      ]
+    }
+  },
+  "database": {
+    "database_fundamentals": {
+      "basic_terms": [
+        {
+          "word": "database",
+          "meaning": "Database (ฐานข้อมูล): ที่เก็บข้อมูลอย่างมีระบบ"
+        },
+        {
+          "word": "data",
+          "meaning": "Data (ข้อมูล): ข้อเท็จจริงที่จัดเก็บในระบบ"
+        },
+        {
+          "word": "record",
+          "meaning": "Record (ระเบียน): แถวของข้อมูลในตาราง"
+        },
+        {
+          "word": "field",
+          "meaning": "Field (ฟิลด์): ช่องข้อมูลในแต่ละระเบียน"
+        },
+        {
+          "word": "table",
+          "meaning": "Table (ตาราง): กลุ่มของข้อมูลที่จัดเรียงเป็นแถวและคอลัมน์"
+        }
+      ],
+      "concepts": [
+        {
+          "word": "schema",
+          "meaning": "Schema (แบบจำลองข้อมูล): โครงสร้างของฐานข้อมูล"
+        },
+        {
+          "word": "instance",
+          "meaning": "Instance (ตัวอย่างข้อมูล): ข้อมูลจริงที่อยู่ในฐานข้อมูล"
+        },
+        {
+          "word": "relation",
+          "meaning": "Relation (ความสัมพันธ์): การเชื่อมโยงระหว่างตาราง"
+        },
+        {
+          "word": "query",
+          "meaning": "Query (คำสั่งค้นหา): ใช้เรียกดูหรือแก้ไขข้อมูลในฐานข้อมูล"
+        }
+      ],
+      "database_types": [
+        {
+          "word": "relational_database",
+          "meaning": "Relational Database (ฐานข้อมูลเชิงสัมพันธ์): เก็บข้อมูลเป็นตารางที่เชื่อมโยงกัน"
+        },
+        {
+          "word": "nosql",
+          "meaning": "NoSQL (ฐานข้อมูลที่ไม่ใช้ตาราง): ใช้เก็บข้อมูลแบบเอกสารหรือกราฟ"
+        },
+        {
+          "word": "graph_database",
+          "meaning": "Graph Database (ฐานข้อมูลกราฟ): ใช้เก็บความสัมพันธ์ระหว่างข้อมูล"
+        }
+      ],
+      "metadata_and_engines": [
+        {
+          "word": "metadata",
+          "meaning": "Metadata (ข้อมูลคำอธิบาย): ข้อมูลที่อธิบายโครงสร้างของฐานข้อมูล"
+        },
+        {
+          "word": "database_engine",
+          "meaning": "Database Engine (กลไกฐานข้อมูล): ส่วนที่จัดเก็บและจัดการข้อมูลจริง"
+        },
+        {
+          "word": "storage",
+          "meaning": "Storage (ที่เก็บข้อมูล): พื้นที่ที่ใช้เก็บไฟล์ของฐานข้อมูล"
+        },
+        {
+          "word": "table_structure",
+          "meaning": "Table Structure (โครงสร้างตาราง): การจัดคอลัมน์และประเภทข้อมูล"
+        },
+        {
+          "word": "data_type",
+          "meaning": "Data Type (ชนิดข้อมูล): ประเภทของค่าที่สามารถจัดเก็บในคอลัมน์"
+        }
+      ],
+      "usage": [
+        {
+          "word": "query_language",
+          "meaning": "Query Language (ภาษาค้นหา): ภาษาที่ใช้เรียกดูข้อมูล เช่น SQL"
+        },
+        {
+          "word": "client_server_model",
+          "meaning": "Client-Server Model (รูปแบบไคลเอนต์เซิร์ฟเวอร์): ระบบที่ฐานข้อมูลอยู่บนเซิร์ฟเวอร์และผู้ใช้เชื่อมต่อผ่านไคลเอนต์"
+        },
+        {
+          "word": "backup_schedule",
+          "meaning": "Backup Schedule (ตารางสำรองข้อมูล): การตั้งเวลาเพื่อสำรองข้อมูลอัตโนมัติ"
+        }
+      ],
+      "architecture": [
+        {
+          "word": "server",
+          "meaning": "Server (เซิร์ฟเวอร์): เครื่องที่ใช้เก็บและจัดการฐานข้อมูล"
+        },
+        {
+          "word": "client",
+          "meaning": "Client (ไคลเอนต์): โปรแกรมหรือผู้ใช้ที่เชื่อมต่อกับฐานข้อมูล"
+        },
+        {
+          "word": "connection",
+          "meaning": "Connection (การเชื่อมต่อ): การติดต่อระหว่างไคลเอนต์กับฐานข้อมูล"
+        },
+        {
+          "word": "session",
+          "meaning": "Session (เซสชัน): การเชื่อมต่อที่เปิดอยู่ระหว่างผู้ใช้กับระบบฐานข้อมูล"
+        }
+      ]
+    },
+    "database_design": {
+      "entity_design": [
+        {
+          "word": "entity",
+          "meaning": "Entity (เอนทิตี): สิ่งที่ต้องการจัดเก็บข้อมูล เช่น ลูกค้า หรือสินค้า"
+        },
+        {
+          "word": "attribute",
+          "meaning": "Attribute (คุณลักษณะ): รายละเอียดของเอนทิตี เช่น ชื่อ หรือรหัส"
+        },
+        {
+          "word": "entity_set",
+          "meaning": "Entity Set (กลุ่มเอนทิตี): กลุ่มของเอนทิตีชนิดเดียวกัน"
+        }
+      ],
+      "keys": [
+        {
+          "word": "primary_key",
+          "meaning": "Primary Key (คีย์หลัก): ใช้ระบุระเบียนไม่ให้ซ้ำกัน"
+        },
+        {
+          "word": "foreign_key",
+          "meaning": "Foreign Key (คีย์ต่างประเทศ): ใช้เชื่อมตารางเข้าด้วยกัน"
+        },
+        {
+          "word": "candidate_key",
+          "meaning": "Candidate Key (คีย์ผู้สมัคร): คีย์ที่อาจใช้เป็นคีย์หลักได้"
+        },
+        {
+          "word": "composite_key",
+          "meaning": "Composite Key (คีย์ผสม): ใช้หลายคอลัมน์รวมกันเป็นคีย์หลัก"
+        }
+      ],
+      "er_model": [
+        {
+          "word": "er_diagram",
+          "meaning": "ER Diagram (แผนภาพ ER): แสดงเอนทิตีและความสัมพันธ์"
+        },
+        {
+          "word": "cardinality",
+          "meaning": "Cardinality (จำนวนความสัมพันธ์): ระบุจำนวนความสัมพันธ์ระหว่างเอนทิตี"
+        },
+        {
+          "word": "relationship",
+          "meaning": "Relationship (ความสัมพันธ์): การเชื่อมโยงระหว่างเอนทิตี"
+        }
+      ],
+      "constraints": [
+        {
+          "word": "unique_constraint",
+          "meaning": "Unique Constraint (ข้อจำกัดไม่ซ้ำ): ป้องกันไม่ให้ค่าซ้ำกันในคอลัมน์"
+        },
+        {
+          "word": "check_constraint",
+          "meaning": "Check Constraint (ข้อจำกัดตรวจสอบ): บังคับให้ข้อมูลตรงตามเงื่อนไข"
+        },
+        {
+          "word": "default_constraint",
+          "meaning": "Default Constraint (ค่าตั้งต้น): กำหนดค่าเริ่มต้นอัตโนมัติเมื่อไม่มีการป้อนข้อมูล"
+        }
+      ],
+      "design_principles": [
+        {
+          "word": "redundancy",
+          "meaning": "Redundancy (ความซ้ำซ้อน): การเก็บข้อมูลซ้ำโดยไม่จำเป็น"
+        },
+        {
+          "word": "data_integrity",
+          "meaning": "Data Integrity (ความสมบูรณ์ของข้อมูล): ความถูกต้องและสอดคล้องของข้อมูล"
+        },
+        {
+          "word": "referential_integrity",
+          "meaning": "Referential Integrity (ความถูกต้องของการอ้างอิง): การอ้างอิงข้อมูลต้องมีอยู่จริง"
+        }
+      ]
+    },
+    "sql_basics": {
+      "commands": [
+        {
+          "word": "select",
+          "meaning": "SELECT: คำสั่งดึงข้อมูลจากตาราง"
+        },
+        {
+          "word": "insert",
+          "meaning": "INSERT: คำสั่งเพิ่มข้อมูลลงในตาราง"
+        },
+        {
+          "word": "update",
+          "meaning": "UPDATE: คำสั่งแก้ไขข้อมูลในตาราง"
+        },
+        {
+          "word": "delete",
+          "meaning": "DELETE: คำสั่งลบข้อมูลออกจากตาราง"
+        }
+      ],
+      "clauses": [
+        {
+          "word": "where",
+          "meaning": "WHERE: ใช้ระบุเงื่อนไขในการค้นหาข้อมูล"
+        },
+        {
+          "word": "group_by",
+          "meaning": "GROUP BY: รวมข้อมูลที่มีค่าซ้ำกัน"
+        },
+        {
+          "word": "order_by",
+          "meaning": "ORDER BY: เรียงลำดับข้อมูล"
+        },
+        {
+          "word": "having",
+          "meaning": "HAVING: ใช้กรองผลลัพธ์หลังจาก GROUP BY"
+        }
+      ],
+      "joins": [
+        {
+          "word": "inner_join",
+          "meaning": "INNER JOIN: ดึงข้อมูลที่ตรงกันจากทั้งสองตาราง"
+        },
+        {
+          "word": "left_join",
+          "meaning": "LEFT JOIN: ดึงข้อมูลทั้งหมดจากตารางซ้าย"
+        },
+        {
+          "word": "right_join",
+          "meaning": "RIGHT JOIN: ดึงข้อมูลทั้งหมดจากตารางขวา"
+        },
+        {
+          "word": "full_join",
+          "meaning": "FULL JOIN: ดึงข้อมูลจากทั้งสองตารางแม้ไม่มีคู่กัน"
+        }
+      ],
+      "functions": [
+        {
+          "word": "count",
+          "meaning": "COUNT(): นับจำนวนระเบียนในตาราง"
+        },
+        {
+          "word": "sum",
+          "meaning": "SUM(): รวมค่าตัวเลขในคอลัมน์"
+        },
+        {
+          "word": "avg",
+          "meaning": "AVG(): หาค่าเฉลี่ยของข้อมูลตัวเลข"
+        },
+        {
+          "word": "min",
+          "meaning": "MIN(): หาค่าต่ำสุด"
+        },
+        {
+          "word": "max",
+          "meaning": "MAX(): หาค่าสูงสุด"
+        }
+      ],
+      "views_and_subqueries": [
+        {
+          "word": "view",
+          "meaning": "View (วิว): ตารางเสมือนที่สร้างจากคำสั่ง SQL"
+        },
+        {
+          "word": "subquery",
+          "meaning": "Subquery (คำสั่งย่อย): คำสั่ง SQL ที่อยู่ภายในคำสั่งหลัก"
+        },
+        {
+          "word": "alias",
+          "meaning": "Alias (ชื่อแทน): ชื่อชั่วคราวที่ใช้ในคำสั่ง SQL"
+        }
+      ],
+      "advanced_commands": [
+        {
+          "word": "truncate",
+          "meaning": "TRUNCATE: คำสั่งลบข้อมูลทั้งหมดในตารางโดยไม่ลบโครงสร้าง"
+        },
+        {
+          "word": "limit",
+          "meaning": "LIMIT: จำกัดจำนวนข้อมูลที่แสดงผล"
+        },
+        {
+          "word": "distinct",
+          "meaning": "DISTINCT: แสดงผลเฉพาะข้อมูลที่ไม่ซ้ำกัน"
+        },
+        {
+          "word": "join_condition",
+          "meaning": "Join Condition (เงื่อนไขการเชื่อม): เงื่อนไขที่ใช้จับคู่ข้อมูลระหว่างตาราง"
+        },
+        {
+          "word": "union",
+          "meaning": "UNION: รวมผลลัพธ์จากหลายคำสั่ง SELECT เข้าด้วยกัน"
+        }
+      ]
+    },
+    "normalization": {
+      "forms": [
+        {
+          "word": "first_normal_form",
+          "meaning": "1NF (รูปแบบปกติที่หนึ่ง): ไม่มีข้อมูลซ้ำในคอลัมน์"
+        },
+        {
+          "word": "second_normal_form",
+          "meaning": "2NF (รูปแบบปกติที่สอง): แยกข้อมูลย่อยที่ไม่ขึ้นกับคีย์หลัก"
+        },
+        {
+          "word": "third_normal_form",
+          "meaning": "3NF (รูปแบบปกติที่สาม): ไม่มีการขึ้นต่อกันระหว่างข้อมูลที่ไม่ใช่คีย์"
+        }
+      ],
+      "benefits": [
+        {
+          "word": "reduce_redundancy",
+          "meaning": "Reduce Redundancy (ลดข้อมูลซ้ำ): ทำให้ข้อมูลไม่ซ้ำซ้อน"
+        },
+        {
+          "word": "improve_integrity",
+          "meaning": "Improve Integrity (เพิ่มความถูกต้อง): ทำให้ข้อมูลเชื่อถือได้"
+        }
+      ],
+      "extra_forms": [
+        {
+          "word": "bcnf",
+          "meaning": "BCNF (รูปแบบปกติบอยซ์-คอด): การปรับรูปแบบข้อมูลให้มีความสัมพันธ์ที่ถูกต้อง"
+        },
+        {
+          "word": "denormalization",
+          "meaning": "Denormalization (ยกเลิกการทำรูปแบบปกติ): รวมข้อมูลเพื่อเพิ่มความเร็วในการเข้าถึง"
+        }
+      ]
+    },
+    "relationships": {
+      "types": [
+        {
+          "word": "one_to_one",
+          "meaning": "One-to-One (หนึ่งต่อหนึ่ง): ความสัมพันธ์แบบหนึ่งต่อหนึ่ง"
+        },
+        {
+          "word": "one_to_many",
+          "meaning": "One-to-Many (หนึ่งต่อหลาย): เอนทิตีหนึ่งเชื่อมกับหลายเอนทิตี"
+        },
+        {
+          "word": "many_to_many",
+          "meaning": "Many-to-Many (หลายต่อหลาย): เอนทิตีหลายตัวเชื่อมกับหลายตัว"
+        }
+      ]
+    },
+    "transactions": {
+      "concepts": [
+        {
+          "word": "transaction",
+          "meaning": "Transaction (ธุรกรรม): กลุ่มคำสั่งที่ต้องสำเร็จทั้งหมดหรือไม่เลย"
+        },
+        {
+          "word": "commit",
+          "meaning": "COMMIT: ยืนยันการเปลี่ยนแปลงในฐานข้อมูล"
+        },
+        {
+          "word": "rollback",
+          "meaning": "ROLLBACK: ยกเลิกการเปลี่ยนแปลง"
+        },
+        {
+          "word": "savepoint",
+          "meaning": "SAVEPOINT: จุดบันทึกชั่วคราวระหว่างธุรกรรม"
+        }
+      ],
+      "properties": [
+        {
+          "word": "atomicity",
+          "meaning": "Atomicity (ความเป็นอะตอม): ธุรกรรมต้องสำเร็จทั้งหมดหรือไม่เลย"
+        },
+        {
+          "word": "consistency",
+          "meaning": "Consistency (ความสอดคล้อง): รักษาความถูกต้องของข้อมูล"
+        },
+        {
+          "word": "isolation",
+          "meaning": "Isolation (การแยก): ธุรกรรมแต่ละชุดไม่กระทบกัน"
+        },
+        {
+          "word": "durability",
+          "meaning": "Durability (ความทนทาน): ข้อมูลที่บันทึกจะไม่สูญหายหลังระบบล่ม"
+        }
+      ],
+      "levels": [
+        {
+          "word": "isolation_level",
+          "meaning": "Isolation Level (ระดับการแยกธุรกรรม): การควบคุมว่าธุรกรรมหนึ่งจะเห็นข้อมูลของอีกธุรกรรมได้หรือไม่"
+        },
+        {
+          "word": "serializable",
+          "meaning": "Serializable (ซีเรียลไลซ์): ระดับการแยกที่เข้มที่สุด ป้องกันการชนกันของธุรกรรม"
+        },
+        {
+          "word": "read_committed",
+          "meaning": "Read Committed: อ่านได้เฉพาะข้อมูลที่ถูกยืนยันแล้ว"
+        },
+        {
+          "word": "read_uncommitted",
+          "meaning": "Read Uncommitted: อ่านข้อมูลที่ยังไม่ถูกยืนยันได้"
+        }
+      ],
+      "problems": [
+        {
+          "word": "deadlock",
+          "meaning": "Deadlock (ภาวะชะงักงัน): เมื่อธุรกรรมสองชุดรอการปลดล็อกจากกันและกัน"
+        },
+        {
+          "word": "locking",
+          "meaning": "Locking (การล็อก): การป้องกันไม่ให้หลายธุรกรรมแก้ไขข้อมูลเดียวกันพร้อมกัน"
+        },
+        {
+          "word": "rollback_point",
+          "meaning": "Rollback Point (จุดย้อนกลับ): จุดที่สามารถยกเลิกธุรกรรมกลับไปได้"
+        }
+      ]
+    },
+    "indexing_and_performance": {
+      "indexing": [
+        {
+          "word": "index",
+          "meaning": "Index (ดัชนี): ใช้ช่วยให้ค้นหาข้อมูลได้เร็วขึ้น"
+        },
+        {
+          "word": "unique_index",
+          "meaning": "Unique Index (ดัชนีเฉพาะ): ห้ามค่าซ้ำในคอลัมน์"
+        },
+        {
+          "word": "composite_index",
+          "meaning": "Composite Index (ดัชนีรวม): ดัชนีจากหลายคอลัมน์"
+        },
+        {
+          "word": "clustered_index",
+          "meaning": "Clustered Index (ดัชนีแบบจัดกลุ่ม): จัดเรียงข้อมูลในตารางตามคีย์"
+        }
+      ],
+      "optimization": [
+        {
+          "word": "query_plan",
+          "meaning": "Query Plan (แผนการสืบค้น): ขั้นตอนที่ระบบใช้ค้นหาข้อมูล"
+        },
+        {
+          "word": "execution_time",
+          "meaning": "Execution Time (เวลารัน): ระยะเวลาที่ใช้ในการประมวลผลคำสั่ง SQL"
+        },
+        {
+          "word": "cache",
+          "meaning": "Cache (แคช): พื้นที่เก็บข้อมูลชั่วคราวเพื่อเร่งความเร็ว"
+        }
+      ],
+      "optimization_details": [
+        {
+          "word": "query_optimization",
+          "meaning": "Query Optimization (การปรับคำสั่ง): การทำให้คำสั่ง SQL ทำงานเร็วขึ้น"
+        },
+        {
+          "word": "execution_plan",
+          "meaning": "Execution Plan (แผนการทำงาน): ขั้นตอนที่ DBMS ใช้ประมวลผลคำสั่ง"
+        },
+        {
+          "word": "analyze",
+          "meaning": "ANALYZE: คำสั่งที่ใช้ตรวจสอบและสร้างสถิติของข้อมูล"
+        },
+        {
+          "word": "vacuum",
+          "meaning": "VACUUM: คำสั่งใน PostgreSQL สำหรับลบข้อมูลที่ไม่ใช้งาน"
+        },
+        {
+          "word": "optimizer",
+          "meaning": "Optimizer (ตัวปรับแต่ง): ส่วนของ DBMS ที่เลือกวิธีการค้นหาข้อมูลที่เร็วที่สุด"
+        }
+      ],
+      "index_tuning": [
+        {
+          "word": "index_tuning",
+          "meaning": "Index Tuning (การปรับแต่งดัชนี): การเลือกดัชนีที่เหมาะสมเพื่อให้ค้นหาข้อมูลเร็วขึ้น"
+        },
+        {
+          "word": "analyzer",
+          "meaning": "Analyzer (ตัววิเคราะห์): เครื่องมือที่ช่วยประเมินประสิทธิภาพคำสั่ง SQL"
+        }
+      ]
+    },
+    "dbms_tools": {
+      "examples": [
+        {
+          "word": "mysql",
+          "meaning": "MySQL: ระบบจัดการฐานข้อมูลยอดนิยมแบบโอเพ่นซอร์ส"
+        },
+        {
+          "word": "postgresql",
+          "meaning": "PostgreSQL: ระบบฐานข้อมูลที่มีฟังก์ชันขั้นสูง"
+        },
+        {
+          "word": "sqlite",
+          "meaning": "SQLite: ฐานข้อมูลขนาดเล็ก ใช้งานในแอปมือถือ"
+        },
+        {
+          "word": "oracle",
+          "meaning": "Oracle: ระบบฐานข้อมูลเชิงพาณิชย์ที่นิยมใช้ในองค์กรใหญ่"
+        },
+        {
+          "word": "mongodb",
+          "meaning": "MongoDB: ระบบฐานข้อมูลแบบ NoSQL ที่เก็บข้อมูลเป็นเอกสาร JSON"
+        }
+      ],
+      "tools": [
+        {
+          "word": "phpmyadmin",
+          "meaning": "phpMyAdmin: เครื่องมือจัดการฐานข้อมูลผ่านเว็บ"
+        },
+        {
+          "word": "pgadmin",
+          "meaning": "pgAdmin: เครื่องมือจัดการ PostgreSQL"
+        },
+        {
+          "word": "workbench",
+          "meaning": "Workbench: เครื่องมือของ MySQL สำหรับออกแบบและเขียน SQL"
+        }
+      ],
+      "cloud_and_management": [
+        {
+          "word": "cloud_database",
+          "meaning": "Cloud Database (ฐานข้อมูลบนคลาวด์): ฐานข้อมูลที่ให้บริการผ่านอินเทอร์เน็ต"
+        },
+        {
+          "word": "azure_sql",
+          "meaning": "Azure SQL: บริการฐานข้อมูลของ Microsoft บนระบบคลาวด์"
+        },
+        {
+          "word": "bigquery",
+          "meaning": "BigQuery: ระบบฐานข้อมูลคลาวด์ของ Google ที่ใช้วิเคราะห์ข้อมูลขนาดใหญ่"
+        },
+        {
+          "word": "data_studio",
+          "meaning": "Data Studio: เครื่องมือสร้างรายงานจากข้อมูลฐานข้อมูล"
+        }
+      ],
+      "backup_tools": [
+        {
+          "word": "dump",
+          "meaning": "Dump (การดัมพ์ข้อมูล): การส่งออกข้อมูลทั้งหมดจากฐานข้อมูล"
+        },
+        {
+          "word": "restore_tool",
+          "meaning": "Restore Tool (เครื่องมือกู้คืน): ใช้ในการนำข้อมูลสำรองกลับมา"
+        }
+      ]
+    },
+    "security_and_backup": {
+      "security": [
+        {
+          "word": "authentication",
+          "meaning": "Authentication (การยืนยันตัวตน): ตรวจสอบสิทธิ์ผู้ใช้งานฐานข้อมูล"
+        },
+        {
+          "word": "authorization",
+          "meaning": "Authorization (การกำหนดสิทธิ์): กำหนดสิทธิ์ในการเข้าถึงข้อมูล"
+        },
+        {
+          "word": "encryption",
+          "meaning": "Encryption (การเข้ารหัส): ป้องกันข้อมูลไม่ให้ถูกอ่านโดยไม่ได้รับอนุญาต"
+        }
+      ],
+      "backup": [
+        {
+          "word": "backup",
+          "meaning": "Backup (สำรองข้อมูล): การเก็บสำเนาข้อมูลเพื่อป้องกันการสูญหาย"
+        },
+        {
+          "word": "restore",
+          "meaning": "Restore (กู้คืน): การนำข้อมูลสำรองกลับมาใช้งาน"
+        },
+        {
+          "word": "replication",
+          "meaning": "Replication (การจำลองข้อมูล): การคัดลอกข้อมูลระหว่างฐานข้อมูลหลายตัว"
+        }
+      ],
+      "advanced_security": [
+        {
+          "word": "audit_log",
+          "meaning": "Audit Log (บันทึกการตรวจสอบ): เก็บประวัติการเข้าถึงฐานข้อมูล"
+        },
+        {
+          "word": "role_management",
+          "meaning": "Role Management (การจัดการบทบาท): กำหนดสิทธิ์การเข้าถึงของผู้ใช้"
+        },
+        {
+          "word": "data_masking",
+          "meaning": "Data Masking (การซ่อนข้อมูล): แสดงข้อมูลบางส่วนเพื่อป้องกันความลับ"
+        },
+        {
+          "word": "firewall",
+          "meaning": "Firewall (ไฟร์วอลล์): ป้องกันการเชื่อมต่อที่ไม่ได้รับอนุญาตจากภายนอก"
+        }
+      ],
+      "recovery_and_monitoring": [
+        {
+          "word": "disaster_recovery",
+          "meaning": "Disaster Recovery (การกู้คืนระบบ): การเตรียมแผนสำรองเมื่อระบบล่ม"
+        },
+        {
+          "word": "monitoring_tool",
+          "meaning": "Monitoring Tool (เครื่องมือตรวจสอบ): โปรแกรมติดตามการทำงานของฐานข้อมูล"
+        },
+        {
+          "word": "data_privacy",
+          "meaning": "Data Privacy (ความเป็นส่วนตัวของข้อมูล): การปกป้องข้อมูลส่วนบุคคลของผู้ใช้"
+        }
+      ]
+    },
+    "best_practices": {
+      "design": [
+        {
+          "word": "data_consistency",
+          "meaning": "Data Consistency (ความสอดคล้องของข้อมูล): ทำให้ข้อมูลเหมือนกันในทุกส่วน"
+        },
+        {
+          "word": "naming_convention",
+          "meaning": "Naming Convention (การตั้งชื่อ): ตั้งชื่อตารางและคอลัมน์ให้เข้าใจง่าย"
+        },
+        {
+          "word": "documentation",
+          "meaning": "Documentation (เอกสาร): เขียนอธิบายโครงสร้างฐานข้อมูล"
+        }
+      ],
+      "maintenance": [
+        {
+          "word": "monitoring",
+          "meaning": "Monitoring (การเฝ้าระวัง): ตรวจสอบการทำงานของฐานข้อมูล"
+        },
+        {
+          "word": "optimization",
+          "meaning": "Optimization (ปรับประสิทธิภาพ): ทำให้ระบบฐานข้อมูลทำงานเร็วขึ้น"
+        },
+        {
+          "word": "update",
+          "meaning": "Update (อัปเดต): ปรับปรุงระบบฐานข้อมูลให้ทันสมัย"
+        }
+      ],
+      "advanced_practices": [
+        {
+          "word": "scalability",
+          "meaning": "Scalability (การขยายระบบ): ความสามารถในการรองรับข้อมูลเพิ่มขึ้น"
+        },
+        {
+          "word": "test_data",
+          "meaning": "Test Data (ข้อมูลทดสอบ): ข้อมูลจำลองที่ใช้ตรวจสอบระบบ"
+        },
+        {
+          "word": "migration",
+          "meaning": "Migration (การย้ายข้อมูล): การโอนข้อมูลจากฐานข้อมูลหนึ่งไปยังอีกฐานหนึ่ง"
+        },
+        {
+          "word": "data_validation",
+          "meaning": "Data Validation (การตรวจสอบข้อมูล): ตรวจสอบให้ข้อมูลถูกต้องก่อนบันทึก"
+        }
+      ],
+      "scalability_and_maintenance": [
+        {
+          "word": "partitioning",
+          "meaning": "Partitioning (การแบ่งตาราง): แยกข้อมูลออกเป็นส่วนย่อยเพื่อให้เข้าถึงได้เร็วขึ้น"
+        },
+        {
+          "word": "sharding",
+          "meaning": "Sharding (การกระจายข้อมูล): การแบ่งข้อมูลออกเป็นหลายเครื่องเพื่อกระจายโหลด"
+        },
+        {
+          "word": "archiving",
+          "meaning": "Archiving (การเก็บถาวร): การย้ายข้อมูลเก่าออกจากระบบหลักเพื่อลดขนาดฐานข้อมูล"
+        },
+        {
+          "word": "data_governance",
+          "meaning": "Data Governance (การกำกับดูแลข้อมูล): การจัดการคุณภาพและความปลอดภัยของข้อมูล"
+        },
+        {
+          "word": "index_strategy",
+          "meaning": "Index Strategy (กลยุทธ์การสร้างดัชนี): การวางแผนสร้างดัชนีให้มีประสิทธิภาพสูงสุด"
+        }
+      ]
+    }
+  },
+   "network": {
+    "network_fundamentals": {
+      "basic_concepts": [
+        {
+          "word": "network",
+          "meaning": "Network (เครือข่าย): การเชื่อมต่อคอมพิวเตอร์หลายเครื่องเพื่อแลกเปลี่ยนข้อมูล"
+        },
+        {
+          "word": "node",
+          "meaning": "Node (โหนด): อุปกรณ์ใด ๆ ที่เชื่อมต่อในเครือข่าย เช่น คอมพิวเตอร์หรือโทรศัพท์"
+        },
+        {
+          "word": "bandwidth",
+          "meaning": "Bandwidth (แบนด์วิดท์): ความเร็วสูงสุดของการส่งข้อมูลในเครือข่าย"
+        },
+        {
+          "word": "latency",
+          "meaning": "Latency (ความหน่วง): เวลาที่ข้อมูลใช้ในการเดินทางจากต้นทางถึงปลายทาง"
+        }
+      ],
+      "types": [
+        {
+          "word": "lan",
+          "meaning": "LAN (เครือข่ายท้องถิ่น): เครือข่ายในพื้นที่ใกล้ เช่น ภายในบ้านหรือสำนักงาน"
+        },
+        {
+          "word": "wan",
+          "meaning": "WAN (เครือข่ายกว้าง): เครือข่ายที่เชื่อมต่อข้ามพื้นที่หรือประเทศ"
+        },
+        {
+          "word": "man",
+          "meaning": "MAN (เครือข่ายระดับเมือง): เครือข่ายที่ครอบคลุมพื้นที่ในเมือง"
+        },
+        {
+          "word": "pan",
+          "meaning": "PAN (เครือข่ายส่วนบุคคล): การเชื่อมต่อระหว่างอุปกรณ์ส่วนตัว เช่น มือถือกับหูฟังบลูทูธ"
+        }
+      ],
+      "topologies": [
+        {
+          "word": "star_topology",
+          "meaning": "Star Topology (โครงแบบดาว): ทุกอุปกรณ์เชื่อมต่อผ่านอุปกรณ์กลาง"
+        },
+        {
+          "word": "bus_topology",
+          "meaning": "Bus Topology (โครงแบบบัส): อุปกรณ์ทั้งหมดเชื่อมต่อผ่านสายเส้นเดียว"
+        },
+        {
+          "word": "ring_topology",
+          "meaning": "Ring Topology (โครงแบบวงแหวน): อุปกรณ์เชื่อมต่อกันเป็นวงกลม"
+        },
+        {
+          "word": "mesh_topology",
+          "meaning": "Mesh Topology (โครงแบบตาข่าย): ทุกอุปกรณ์เชื่อมต่อถึงกันโดยตรง"
+        }
+      ],
+      "extra_concepts": [
+        {
+          "word": "protocol",
+          "meaning": "Protocol (โพรโทคอล): กฎการสื่อสารข้อมูลในเครือข่าย"
+        },
+        {
+          "word": "packet",
+          "meaning": "Packet (แพ็กเก็ต): หน่วยเล็กสุดของข้อมูลที่ส่งผ่านเครือข่าย"
+        },
+        {
+          "word": "wired_network",
+          "meaning": "Wired Network (เครือข่ายมีสาย): การเชื่อมต่อด้วยสาย LAN"
+        },
+        {
+          "word": "wireless_network",
+          "meaning": "Wireless Network (เครือข่ายไร้สาย): การเชื่อมต่อโดยไม่ใช้สาย"
+        },
+        {
+          "word": "switching",
+          "meaning": "Switching (การสวิตช์): กระบวนการส่งข้อมูลไปยังปลายทางที่ถูกต้อง"
+        }
+      ],
+      "concept_extensions": [
+        {
+          "word": "client_server",
+          "meaning": "Client-Server (รูปแบบไคลเอนต์-เซิร์ฟเวอร์): เครื่องหนึ่งให้บริการ อีกเครื่องเรียกใช้บริการ"
+        },
+        {
+          "word": "peer_to_peer",
+          "meaning": "Peer-to-Peer (เครือข่ายเพื่อนต่อเพื่อน): ทุกเครื่องในเครือข่ายทำหน้าที่เท่าเทียมกัน"
+        },
+        {
+          "word": "throughput_rate",
+          "meaning": "Throughput Rate (อัตราการส่งข้อมูล): ปริมาณข้อมูลที่ส่งได้จริงในหนึ่งวินาที"
+        },
+        {
+          "word": "jitter",
+          "meaning": "Jitter (ความแปรปรวนของเวลา): ความไม่สม่ำเสมอของเวลาการส่งข้อมูล"
+        },
+        {
+          "word": "collision",
+          "meaning": "Collision (การชนกันของข้อมูล): เมื่อข้อมูลจากสองเครื่องส่งพร้อมกันในเครือข่าย"
+        }
+      ]
+    },
+    "network_devices": {
+      "main_devices": [
+        {
+          "word": "router",
+          "meaning": "Router (เราเตอร์): อุปกรณ์ที่ส่งข้อมูลระหว่างเครือข่าย"
+        },
+        {
+          "word": "switch",
+          "meaning": "Switch (สวิตช์): อุปกรณ์ที่เชื่อมต่ออุปกรณ์ในเครือข่ายเดียวกัน"
+        },
+        {
+          "word": "hub",
+          "meaning": "Hub (ฮับ): อุปกรณ์ที่ส่งข้อมูลไปยังทุกอุปกรณ์ในเครือข่าย"
+        },
+        {
+          "word": "modem",
+          "meaning": "Modem (โมเด็ม): อุปกรณ์แปลงสัญญาณระหว่างอินเทอร์เน็ตและคอมพิวเตอร์"
+        }
+      ],
+      "end_devices": [
+        {
+          "word": "computer",
+          "meaning": "Computer (คอมพิวเตอร์): อุปกรณ์หลักที่ใช้เชื่อมต่อและใช้งานเครือข่าย"
+        },
+        {
+          "word": "printer",
+          "meaning": "Printer (เครื่องพิมพ์): อุปกรณ์ปลายทางที่เชื่อมต่อในเครือข่าย"
+        },
+        {
+          "word": "mobile_phone",
+          "meaning": "Mobile Phone (โทรศัพท์มือถือ): อุปกรณ์พกพาที่เชื่อมต่อเครือข่ายไร้สาย"
+        },
+        {
+          "word": "server",
+          "meaning": "Server (เซิร์ฟเวอร์): เครื่องที่ให้บริการข้อมูลกับอุปกรณ์อื่นในเครือข่าย"
+        }
+      ],
+      "more_devices": [
+        {
+          "word": "access_point",
+          "meaning": "Access Point (จุดเชื่อมต่อ): อุปกรณ์กระจายสัญญาณ Wi-Fi"
+        },
+        {
+          "word": "bridge",
+          "meaning": "Bridge (บริดจ์): อุปกรณ์ที่เชื่อมสองเครือข่ายเข้าด้วยกัน"
+        },
+        {
+          "word": "repeater",
+          "meaning": "Repeater (รีพีตเตอร์): อุปกรณ์ขยายสัญญาณให้ครอบคลุมมากขึ้น"
+        },
+        {
+          "word": "firewall_device",
+          "meaning": "Firewall (ไฟร์วอลล์): อุปกรณ์ที่กรองข้อมูลเข้าออกเครือข่าย"
+        },
+        {
+          "word": "load_balancer",
+          "meaning": "Load Balancer (ตัวกระจายโหลด): กระจายงานไปยังเซิร์ฟเวอร์หลายเครื่อง"
+        }
+      ],
+      "advanced_devices": [
+        {
+          "word": "gateway_device",
+          "meaning": "Gateway (เกตเวย์): อุปกรณ์ที่เชื่อมต่อเครือข่ายต่างชนิดกัน"
+        },
+        {
+          "word": "ids",
+          "meaning": "IDS (ระบบตรวจจับการบุกรุก): ตรวจสอบพฤติกรรมที่ผิดปกติในเครือข่าย"
+        },
+        {
+          "word": "ips",
+          "meaning": "IPS (ระบบป้องกันการบุกรุก): ป้องกันและบล็อกการโจมตีทันที"
+        },
+        {
+          "word": "proxy_server",
+          "meaning": "Proxy Server (พร็อกซีเซิร์ฟเวอร์): ตัวกลางระหว่างผู้ใช้กับอินเทอร์เน็ต"
+        },
+        {
+          "word": "network_adapter",
+          "meaning": "Network Adapter (การ์ดเครือข่าย): ส่วนที่ทำให้คอมพิวเตอร์เชื่อมต่อเครือข่ายได้"
+        }
+      ]
+    },
+    "ip_and_routing": {
+      "ip_basics": [
+        {
+          "word": "ip_address",
+          "meaning": "IP Address (ที่อยู่ไอพี): หมายเลขเฉพาะของอุปกรณ์ในเครือข่าย"
+        },
+        {
+          "word": "ipv4",
+          "meaning": "IPv4 (ไอพีเวอร์ชัน 4): รูปแบบหมายเลขไอพีแบบดั้งเดิม เช่น 192.168.1.1"
+        },
+        {
+          "word": "ipv6",
+          "meaning": "IPv6 (ไอพีเวอร์ชัน 6): รูปแบบใหม่ที่มีจำนวนที่อยู่มากขึ้น"
+        },
+        {
+          "word": "subnet_mask",
+          "meaning": "Subnet Mask (มาส์กเครือข่าย): ใช้แบ่งเครือข่ายย่อย"
+        },
+        {
+          "word": "gateway",
+          "meaning": "Gateway (เกตเวย์): จุดเชื่อมต่อระหว่างเครือข่ายภายในกับภายนอก"
+        }
+      ],
+      "routing_concepts": [
+        {
+          "word": "routing",
+          "meaning": "Routing (การกำหนดเส้นทาง): การเลือกเส้นทางที่ข้อมูลจะเดินทางไป"
+        },
+        {
+          "word": "static_routing",
+          "meaning": "Static Routing (การกำหนดเส้นทางคงที่): ผู้ดูแลระบบตั้งค่าเส้นทางเอง"
+        },
+        {
+          "word": "dynamic_routing",
+          "meaning": "Dynamic Routing (การกำหนดเส้นทางอัตโนมัติ): ระบบคำนวณเส้นทางเอง"
+        },
+        {
+          "word": "default_route",
+          "meaning": "Default Route (เส้นทางเริ่มต้น): เส้นทางที่ใช้เมื่อไม่มีเส้นทางอื่นตรงกัน"
+        }
+      ],
+      "advanced_concepts": [
+        {
+          "word": "nat",
+          "meaning": "NAT (การแปลที่อยู่เครือข่าย): เปลี่ยนที่อยู่ IP ภายในให้ออกสู่ภายนอก"
+        },
+        {
+          "word": "cidr",
+          "meaning": "CIDR (การจัดแบ่งที่อยู่): รูปแบบการเขียนไอพีพร้อมมาส์ก เช่น 192.168.1.0/24"
+        },
+        {
+          "word": "routing_table",
+          "meaning": "Routing Table (ตารางเส้นทาง): ข้อมูลเส้นทางที่เราท์เตอร์ใช้ส่งข้อมูล"
+        },
+        {
+          "word": "traceroute",
+          "meaning": "Traceroute (ตรวจสอบเส้นทาง): คำสั่งดูเส้นทางที่ข้อมูลเดินทางผ่าน"
+        },
+        {
+          "word": "ping",
+          "meaning": "Ping (ทดสอบการเชื่อมต่อ): คำสั่งตรวจสอบว่าเครื่องปลายทางตอบสนองหรือไม่"
+        }
+      ],
+      "extra_terms": [
+        {
+          "word": "loopback_address",
+          "meaning": "Loopback Address (ที่อยู่ย้อนกลับ): ที่อยู่ IP พิเศษ 127.0.0.1 สำหรับทดสอบในเครื่อง"
+        },
+        {
+          "word": "static_ip",
+          "meaning": "Static IP (ไอพีคงที่): ที่อยู่ IP ที่ไม่เปลี่ยนแปลง"
+        },
+        {
+          "word": "dynamic_ip",
+          "meaning": "Dynamic IP (ไอพีเปลี่ยนได้): ไอพีที่ได้รับจาก DHCP แบบอัตโนมัติ"
+        },
+        {
+          "word": "private_ip",
+          "meaning": "Private IP (ไอพีภายใน): ใช้เฉพาะในเครือข่ายส่วนตัว"
+        },
+        {
+          "word": "public_ip",
+          "meaning": "Public IP (ไอพีสาธารณะ): ใช้สำหรับเชื่อมต่ออินเทอร์เน็ตจากภายนอก"
+        }
+      ]
+    },
+    "osi_layers": {
+      "layer_overview": [
+        {
+          "word": "osi_model",
+          "meaning": "OSI Model (โมเดล OSI): แบบจำลองที่แบ่งการสื่อสารออกเป็น 7 ชั้น"
+        },
+        {
+          "word": "tcp_ip_model",
+          "meaning": "TCP/IP Model (โมเดล TCP/IP): แบบจำลองที่ใช้งานจริงในอินเทอร์เน็ต"
+        },
+        {
+          "word": "encapsulation",
+          "meaning": "Encapsulation (การห่อหุ้มข้อมูล): การเพิ่มข้อมูลหัวและท้ายในแต่ละชั้น"
+        }
+      ],
+      "seven_layers": [
+        {
+          "word": "physical_layer",
+          "meaning": "Physical Layer (ชั้นกายภาพ): ส่งข้อมูลผ่านสายหรือคลื่น"
+        },
+        {
+          "word": "data_link_layer",
+          "meaning": "Data Link Layer (ชั้นเชื่อมโยงข้อมูล): จัดรูปแบบข้อมูลสำหรับส่งต่อ"
+        },
+        {
+          "word": "network_layer",
+          "meaning": "Network Layer (ชั้นเครือข่าย): กำหนดเส้นทางและที่อยู่ปลายทาง"
+        },
+        {
+          "word": "transport_layer",
+          "meaning": "Transport Layer (ชั้นขนส่ง): ควบคุมการส่งข้อมูลให้ครบถ้วน"
+        },
+        {
+          "word": "application_layer",
+          "meaning": "Application Layer (ชั้นแอปพลิเคชัน): สื่อสารระหว่างผู้ใช้กับระบบเครือข่าย"
+        }
+      ],
+      "remaining_layers": [
+        {
+          "word": "presentation_layer",
+          "meaning": "Presentation Layer (ชั้นการนำเสนอ): แปลงข้อมูลให้อยู่ในรูปแบบที่โปรแกรมเข้าใจ"
+        },
+        {
+          "word": "session_layer",
+          "meaning": "Session Layer (ชั้นเซสชัน): จัดการการเชื่อมต่อระหว่างเครื่องต้นทางและปลายทาง"
+        }
+      ]
+    },
+    "protocols": {
+      "common_protocols": [
+        {
+          "word": "tcp",
+          "meaning": "TCP (โปรโตคอล TCP): โปรโตคอลที่รับประกันการส่งข้อมูลครบถ้วน"
+        },
+        {
+          "word": "udp",
+          "meaning": "UDP (โปรโตคอล UDP): โปรโตคอลที่ส่งข้อมูลเร็วแต่ไม่รับประกันความครบถ้วน"
+        },
+        {
+          "word": "http",
+          "meaning": "HTTP (โปรโตคอล HTTP): ใช้สำหรับการสื่อสารของเว็บ"
+        },
+        {
+          "word": "https",
+          "meaning": "HTTPS (โปรโตคอล HTTPS): HTTP ที่เข้ารหัสเพื่อความปลอดภัย"
+        },
+        {
+          "word": "ftp",
+          "meaning": "FTP (โปรโตคอล FTP): ใช้รับส่งไฟล์ผ่านเครือข่าย"
+        }
+      ],
+      "addressing": [
+        {
+          "word": "mac_address",
+          "meaning": "MAC Address (ที่อยู่แมค): หมายเลขเฉพาะของอุปกรณ์เครือข่าย"
+        },
+        {
+          "word": "dns",
+          "meaning": "DNS (ระบบชื่อโดเมน): แปลงชื่อเว็บไซต์เป็นหมายเลขไอพี"
+        },
+        {
+          "word": "dhcp",
+          "meaning": "DHCP (การแจกไอพีอัตโนมัติ): ระบบแจกที่อยู่ไอพีให้เครื่องลูกข่าย"
+        }
+      ],
+      "more_protocols": [
+        {
+          "word": "smtp",
+          "meaning": "SMTP (โปรโตคอลส่งอีเมล): ใช้ส่งอีเมลจากเครื่องผู้ใช้ไปยังเซิร์ฟเวอร์"
+        },
+        {
+          "word": "pop3",
+          "meaning": "POP3 (โปรโตคอลรับอีเมล): ใช้ดาวน์โหลดอีเมลจากเซิร์ฟเวอร์"
+        },
+        {
+          "word": "icmp",
+          "meaning": "ICMP (โปรโตคอลตรวจสอบ): ใช้ตรวจสอบการส่งข้อมูล เช่น คำสั่ง ping"
+        },
+        {
+          "word": "arp",
+          "meaning": "ARP (โปรโตคอลจับคู่): แปลงหมายเลข IP เป็น MAC Address"
+        },
+        {
+          "word": "snmp",
+          "meaning": "SNMP (โปรโตคอลจัดการ): ใช้จัดการและตรวจสอบอุปกรณ์เครือข่าย"
+        }
+      ],
+      "other_protocols": [
+        {
+          "word": "telnet",
+          "meaning": "Telnet (โปรโตคอลเทลเน็ต): ใช้ควบคุมคอมพิวเตอร์จากระยะไกล"
+        },
+        {
+          "word": "ssh",
+          "meaning": "SSH (โปรโตคอล SSH): ใช้ควบคุมคอมพิวเตอร์จากระยะไกลแบบเข้ารหัส"
+        },
+        {
+          "word": "ntp",
+          "meaning": "NTP (โปรโตคอลเวลา): ใช้ปรับเวลาให้ตรงกันในระบบเครือข่าย"
+        },
+        {
+          "word": "smtp_extension",
+          "meaning": "SMTP Extension (ส่วนขยาย SMTP): เพิ่มความสามารถให้โปรโตคอลอีเมล"
+        },
+        {
+          "word": "tftp",
+          "meaning": "TFTP (โปรโตคอลรับส่งไฟล์ขนาดเล็ก): ใช้ส่งไฟล์ระหว่างอุปกรณ์อย่างง่าย"
+        }
+      ]
+    },
+    "wireless_and_internet": {
+      "wifi_and_signals": [
+        {
+          "word": "wifi",
+          "meaning": "Wi-Fi (ไวไฟ): เครือข่ายไร้สายที่เชื่อมต่ออินเทอร์เน็ตได้"
+        },
+        {
+          "word": "ssid",
+          "meaning": "SSID (ชื่อเครือข่าย): ชื่อที่ใช้ระบุเครือข่าย Wi-Fi"
+        },
+        {
+          "word": "hotspot",
+          "meaning": "Hotspot (จุดกระจายสัญญาณ): พื้นที่ที่ให้บริการอินเทอร์เน็ตไร้สาย"
+        },
+        {
+          "word": "bluetooth",
+          "meaning": "Bluetooth (บลูทูธ): การสื่อสารระยะสั้นระหว่างอุปกรณ์"
+        }
+      ],
+      "internet_concepts": [
+        {
+          "word": "isp",
+          "meaning": "ISP (ผู้ให้บริการอินเทอร์เน็ต): บริษัทที่ให้บริการอินเทอร์เน็ตแก่ผู้ใช้"
+        },
+        {
+          "word": "ip_addressing",
+          "meaning": "IP Addressing (การกำหนดที่อยู่ไอพี): การระบุหมายเลขให้เครื่องในเครือข่าย"
+        },
+        {
+          "word": "vpn",
+          "meaning": "VPN (เครือข่ายส่วนตัวเสมือน): การเชื่อมต่อที่ปลอดภัยผ่านอินเทอร์เน็ต"
+        },
+        {
+          "word": "firewall",
+          "meaning": "Firewall (ไฟร์วอลล์): ระบบที่ควบคุมการเข้าถึงเครือข่าย"
+        }
+      ],
+      "modern_tech": [
+        {
+          "word": "4g",
+          "meaning": "4G: เทคโนโลยีเครือข่ายมือถือรุ่นที่ 4"
+        },
+        {
+          "word": "5g",
+          "meaning": "5G: เทคโนโลยีเครือข่ายมือถือรุ่นใหม่ที่เร็วกว่าเดิม"
+        },
+        {
+          "word": "iot",
+          "meaning": "IoT (อินเทอร์เน็ตของสรรพสิ่ง): การเชื่อมต่ออุปกรณ์ต่าง ๆ ผ่านอินเทอร์เน็ต"
+        },
+        {
+          "word": "cloud_network",
+          "meaning": "Cloud Network (เครือข่ายคลาวด์): การเชื่อมต่อข้อมูลผ่านระบบคลาวด์"
+        },
+        {
+          "word": "satellite_network",
+          "meaning": "Satellite Network (เครือข่ายดาวเทียม): การสื่อสารผ่านดาวเทียม"
+        }
+      ],
+      "expansion": [
+        {
+          "word": "mesh_wifi",
+          "meaning": "Mesh Wi-Fi (ไวไฟแบบตาข่าย): เครือข่ายไร้สายที่มีหลายจุดกระจายสัญญาณ"
+        },
+        {
+          "word": "tethering",
+          "meaning": "Tethering (แชร์อินเทอร์เน็ต): การแชร์สัญญาณจากมือถือไปยังอุปกรณ์อื่น"
+        },
+        {
+          "word": "mobile_network",
+          "meaning": "Mobile Network (เครือข่ายมือถือ): ระบบสื่อสารไร้สายสำหรับโทรศัพท์"
+        },
+        {
+          "word": "broadband",
+          "meaning": "Broadband (บรอดแบนด์): การเชื่อมต่ออินเทอร์เน็ตความเร็วสูง"
+        },
+        {
+          "word": "fiber_optic",
+          "meaning": "Fiber Optic (ใยแก้วนำแสง): สายส่งข้อมูลความเร็วสูงผ่านแสง"
+        }
+      ]
+    },
+    "security": {
+      "network_security": [
+        {
+          "word": "encryption",
+          "meaning": "Encryption (การเข้ารหัส): ป้องกันไม่ให้ข้อมูลถูกอ่านระหว่างส่ง"
+        },
+        {
+          "word": "authentication",
+          "meaning": "Authentication (การยืนยันตัวตน): ตรวจสอบผู้ใช้งานก่อนเข้าระบบ"
+        },
+        {
+          "word": "vpn_tunneling",
+          "meaning": "VPN Tunneling (การสร้างช่องสื่อสารส่วนตัว): การส่งข้อมูลผ่านช่องทางที่ปลอดภัย"
+        },
+        {
+          "word": "access_control",
+          "meaning": "Access Control (การควบคุมการเข้าถึง): จำกัดสิทธิ์ผู้ใช้งานในระบบ"
+        },
+        {
+          "word": "malware",
+          "meaning": "Malware (มัลแวร์): โปรแกรมที่ออกแบบมาเพื่อทำลายหรือขโมยข้อมูล"
+        }
+      ],
+      "advanced_security": [
+        {
+          "word": "phishing",
+          "meaning": "Phishing (ฟิชชิง): การหลอกให้ผู้ใช้เปิดเผยข้อมูลสำคัญ"
+        },
+        {
+          "word": "ransomware",
+          "meaning": "Ransomware (มัลแวร์เรียกค่าไถ่): โปรแกรมที่ล็อกไฟล์และเรียกค่าไถ่"
+        },
+        {
+          "word": "certificate",
+          "meaning": "Certificate (ใบรับรองความปลอดภัย): ยืนยันความถูกต้องของเว็บไซต์"
+        },
+        {
+          "word": "password_policy",
+          "meaning": "Password Policy (นโยบายรหัสผ่าน): กำหนดเงื่อนไขรหัสผ่านให้ปลอดภัย"
+        },
+        {
+          "word": "two_factor_auth",
+          "meaning": "Two-Factor Authentication (การยืนยันสองขั้นตอน): เพิ่มความปลอดภัยในการเข้าสู่ระบบ"
+        }
+      ]
+    },
+    "troubleshooting": {
+      "tools_and_methods": [
+        {
+          "word": "nslookup",
+          "meaning": "nslookup: คำสั่งตรวจสอบชื่อโดเมนและที่อยู่ไอพี"
+        },
+        {
+          "word": "bandwidth_test",
+          "meaning": "Bandwidth Test (ทดสอบความเร็ว): ตรวจสอบความเร็วอินเทอร์เน็ต"
+        },
+        {
+          "word": "packet_loss",
+          "meaning": "Packet Loss (การสูญหายของข้อมูล): ข้อมูลบางส่วนไม่ถึงปลายทาง"
+        },
+        {
+          "word": "latency_test",
+          "meaning": "Latency Test (ทดสอบความหน่วง): ตรวจสอบเวลาที่ข้อมูลใช้เดินทาง"
+        },
+        {
+          "word": "network_diagnosis",
+          "meaning": "Network Diagnosis (การวิเคราะห์เครือข่าย): ตรวจสอบหาสาเหตุปัญหาในระบบ"
+        }
+      ],
+      "advanced_tools": [
+        {
+          "word": "netstat",
+          "meaning": "Netstat (ตรวจสอบการเชื่อมต่อ): แสดงสถานะการเชื่อมต่อของเครือข่าย"
+        },
+        {
+          "word": "traceroute_option",
+          "meaning": "Traceroute Option (ตรวจสอบเส้นทางแบบละเอียด): ดูเส้นทางข้อมูลแบบมีรายละเอียด"
+        },
+        {
+          "word": "log_file",
+          "meaning": "Log File (ไฟล์บันทึก): บันทึกเหตุการณ์ต่าง ๆ ของเครือข่าย"
+        },
+        {
+          "word": "system_monitor",
+          "meaning": "System Monitor (ตัวตรวจสอบระบบ): ตรวจสอบประสิทธิภาพของเครื่องและเครือข่าย"
+        },
+        {
+          "word": "interface_status",
+          "meaning": "Interface Status (สถานะอินเทอร์เฟซ): ตรวจสอบพอร์ตหรือการ์ดเครือข่าย"
+        }
+      ]
+    },
+    "performance": {
+      "optimization": [
+        {
+          "word": "qos",
+          "meaning": "QoS (คุณภาพการให้บริการ): การจัดลำดับความสำคัญของข้อมูล"
+        },
+        {
+          "word": "load_balancing",
+          "meaning": "Load Balancing (การกระจายโหลด): แบ่งภาระงานให้เซิร์ฟเวอร์หลายเครื่อง"
+        },
+        {
+          "word": "redundancy",
+          "meaning": "Redundancy (การซ้ำซ้อน): มีระบบสำรองเพื่อป้องกันการล่ม"
+        },
+        {
+          "word": "throughput",
+          "meaning": "Throughput (อัตราการส่งข้อมูล): ปริมาณข้อมูลที่ส่งได้ในหนึ่งวินาที"
+        },
+        {
+          "word": "uptime",
+          "meaning": "Uptime (เวลาทำงาน): ระยะเวลาที่ระบบออนไลน์โดยไม่หยุดชะงัก"
+        }
+      ],
+      "extra_optimization": [
+        {
+          "word": "bottleneck",
+          "meaning": "Bottleneck (จุดคอขวด): จุดที่ทำให้การทำงานของเครือข่ายช้าลง"
+        },
+        {
+          "word": "packet_delay",
+          "meaning": "Packet Delay (ความล่าช้าของแพ็กเก็ต): เวลาที่ข้อมูลใช้ในการส่งถึงปลายทาง"
+        },
+        {
+          "word": "network_utilization",
+          "meaning": "Network Utilization (การใช้งานเครือข่าย): เปอร์เซ็นต์การใช้งานของแบนด์วิดท์"
+        },
+        {
+          "word": "latency_spike",
+          "meaning": "Latency Spike (ความหน่วงเพิ่มขึ้น): ช่วงเวลาที่เกิดความหน่วงสูงชั่วคราว"
+        },
+        {
+          "word": "service_availability",
+          "meaning": "Service Availability (ความพร้อมของบริการ): การที่ระบบทำงานได้โดยไม่ล่ม"
+        }
+      ]
+    },
+    "best_practices": {
+      "maintenance": [
+        {
+          "word": "network_monitoring",
+          "meaning": "Network Monitoring (การเฝ้าระวังเครือข่าย): ตรวจสอบสถานะของอุปกรณ์"
+        },
+        {
+          "word": "documentation",
+          "meaning": "Documentation (เอกสารประกอบ): บันทึกข้อมูลการตั้งค่าเครือข่าย"
+        },
+        {
+          "word": "update_firmware",
+          "meaning": "Update Firmware (อัปเดตเฟิร์มแวร์): ปรับปรุงซอฟต์แวร์ของอุปกรณ์"
+        },
+        {
+          "word": "backup_config",
+          "meaning": "Backup Config (สำรองการตั้งค่า): เก็บข้อมูลการตั้งค่าไว้กรณีฉุกเฉิน"
+        },
+        {
+          "word": "security_audit",
+          "meaning": "Security Audit (ตรวจสอบความปลอดภัย): ตรวจสอบช่องโหว่ของระบบเครือข่าย"
+        }
+      ],
+      "management": [
+        {
+          "word": "training",
+          "meaning": "Training (การฝึกอบรม): สอนผู้ใช้งานและผู้ดูแลให้เข้าใจระบบเครือข่าย"
+        },
+        {
+          "word": "patch_management",
+          "meaning": "Patch Management (การจัดการแพตช์): อัปเดตซอฟต์แวร์เพื่ออุดช่องโหว่"
+        },
+        {
+          "word": "redundancy_test",
+          "meaning": "Redundancy Test (การทดสอบระบบสำรอง): ตรวจสอบระบบสำรองให้ทำงานได้จริง"
+        },
+        {
+          "word": "change_log",
+          "meaning": "Change Log (บันทึกการเปลี่ยนแปลง): บันทึกสิ่งที่เปลี่ยนในระบบเครือข่าย"
+        },
+        {
+          "word": "incident_response",
+          "meaning": "Incident Response (การตอบสนองเหตุฉุกเฉิน): ขั้นตอนเมื่อระบบถูกโจมตีหรือขัดข้อง"
+        }
+      ]
+    }
+  },
+    "web": {
+    "frontend": {
+      "html_basics": [
+        {
+          "word": "html",
+          "meaning": "HTML (ภาษามาร์กอัป): ภาษาหลักในการสร้างโครงสร้างเว็บเพจ"
+        },
+        {
+          "word": "tag",
+          "meaning": "Tag (แท็ก): ใช้กำหนดองค์ประกอบใน HTML เช่น <p>, <div>"
+        },
+        {
+          "word": "element",
+          "meaning": "Element (องค์ประกอบ): ส่วนประกอบของเพจที่มีแท็กเปิดและปิด"
+        },
+        {
+          "word": "attribute",
+          "meaning": "Attribute (คุณสมบัติ): ข้อมูลเสริมของแท็ก เช่น id, class"
+        },
+        {
+          "word": "meta",
+          "meaning": "Meta (เมตาแท็ก): ใช้กำหนดข้อมูลเกี่ยวกับหน้าเว็บ เช่น คำอธิบายหรือภาษา"
+        },
+        {
+          "word": "heading",
+          "meaning": "Heading (หัวข้อ): ใช้กำหนดหัวข้อใน HTML เช่น <h1> ถึง <h6>"
+        },
+        {
+          "word": "paragraph",
+          "meaning": "Paragraph (ย่อหน้า): ใช้แสดงข้อความในแท็ก <p>"
+        },
+        {
+          "word": "link",
+          "meaning": "Link (ลิงก์): ใช้เชื่อมโยงไปยังหน้าอื่นด้วยแท็ก <a>"
+        },
+        {
+          "word": "image",
+          "meaning": "Image (รูปภาพ): แทรกรูปในเว็บด้วยแท็ก <img>"
+        },
+        {
+          "word": "list",
+          "meaning": "List (รายการ): แสดงรายการข้อมูล เช่น <ul>, <ol>"
+        }
+      ],
+      "css_styling": [
+        {
+          "word": "css",
+          "meaning": "CSS (ภาษาตกแต่ง): ใช้กำหนดรูปแบบ สี และขนาดของเว็บเพจ"
+        },
+        {
+          "word": "selector",
+          "meaning": "Selector (ตัวเลือก): ใช้เลือกองค์ประกอบเพื่อกำหนดสไตล์"
+        },
+        {
+          "word": "margin",
+          "meaning": "Margin (ระยะขอบนอก): ช่องว่างรอบองค์ประกอบ"
+        },
+        {
+          "word": "padding",
+          "meaning": "Padding (ระยะขอบใน): ช่องว่างระหว่างขอบกับเนื้อหา"
+        },
+        {
+          "word": "flexbox",
+          "meaning": "Flexbox (ระบบยืดหยุ่น): ใช้จัดวางองค์ประกอบในแนวแถวและคอลัมน์"
+        },
+        {
+          "word": "grid",
+          "meaning": "Grid (ระบบตาราง): ใช้จัดเลย์เอาต์หน้าเว็บให้เป็นระเบียบ"
+        },
+        {
+          "word": "responsive",
+          "meaning": "Responsive (ตอบสนอง): ทำให้เว็บแสดงผลได้ทุกขนาดหน้าจอ"
+        },
+        {
+          "word": "animation",
+          "meaning": "Animation (แอนิเมชัน): ทำให้เว็บมีการเคลื่อนไหว"
+        },
+        {
+          "word": "transition",
+          "meaning": "Transition (การเปลี่ยนผ่าน): ทำให้การเปลี่ยนค่าดูนุ่มนวล"
+        },
+        {
+          "word": "transform",
+          "meaning": "Transform (การแปลง): หมุน ขยาย หรือย้ายองค์ประกอบ"
+        },
+        {
+          "word": "z_index",
+          "meaning": "Z-index (ลำดับชั้น): ควบคุมการซ้อนทับขององค์ประกอบ"
+        }
+      ],
+      "javascript_basics": [
+        {
+          "word": "javascript",
+          "meaning": "JavaScript (ภาษาสคริปต์): ทำให้เว็บโต้ตอบได้"
+        },
+        {
+          "word": "event",
+          "meaning": "Event (เหตุการณ์): การกระทำของผู้ใช้ เช่น คลิก หรือเลื่อนเมาส์"
+        },
+        {
+          "word": "dom",
+          "meaning": "DOM (Document Object Model): โครงสร้าง HTML ที่เข้าถึงได้ด้วยโค้ด"
+        },
+        {
+          "word": "function",
+          "meaning": "Function (ฟังก์ชัน): กลุ่มคำสั่งที่ทำงานเฉพาะอย่าง"
+        },
+        {
+          "word": "variable",
+          "meaning": "Variable (ตัวแปร): เก็บค่าที่เปลี่ยนได้"
+        },
+        {
+          "word": "array",
+          "meaning": "Array (อาเรย์): กลุ่มข้อมูลหลายค่าในตัวเดียว"
+        },
+        {
+          "word": "object",
+          "meaning": "Object (อ็อบเจกต์): ข้อมูลที่เก็บค่าและคุณสมบัติร่วมกัน"
+        },
+        {
+          "word": "promise",
+          "meaning": "Promise (คำมั่น): ใช้จัดการงานแบบไม่รอผลทันทีใน JavaScript"
+        },
+        {
+          "word": "async",
+          "meaning": "Async (ไม่ประสานเวลา): ใช้เขียนโค้ดที่รอผลลัพธ์ได้"
+        },
+        {
+          "word": "await",
+          "meaning": "Await (รอ): ใช้คู่กับ async เพื่อรอให้ผลลัพธ์เสร็จก่อนทำต่อ"
+        }
+      ]
+    },
+    "backend": {
+      "server_basics": [
+        {
+          "word": "server",
+          "meaning": "Server (เซิร์ฟเวอร์): เครื่องที่ให้บริการข้อมูลแก่ผู้ใช้"
+        },
+        {
+          "word": "client",
+          "meaning": "Client (ไคลเอนต์): ผู้ร้องขอข้อมูลจากเซิร์ฟเวอร์"
+        },
+        {
+          "word": "request",
+          "meaning": "Request (คำขอ): การร้องขอข้อมูลจากผู้ใช้"
+        },
+        {
+          "word": "response",
+          "meaning": "Response (คำตอบ): การตอบกลับจากเซิร์ฟเวอร์"
+        },
+        {
+          "word": "status_code",
+          "meaning": "Status Code (รหัสสถานะ): ตัวเลขบ่งบอกผลลัพธ์ เช่น 200, 404, 500"
+        }
+      ],
+      "api_basics": [
+        {
+          "word": "api",
+          "meaning": "API (อินเทอร์เฟซโปรแกรม): ช่องทางเชื่อมต่อระบบต่าง ๆ"
+        },
+        {
+          "word": "rest",
+          "meaning": "REST (รูปแบบ API): มาตรฐานส่งข้อมูลผ่าน HTTP"
+        },
+        {
+          "word": "json",
+          "meaning": "JSON (ข้อมูล): รูปแบบข้อมูลแลกเปลี่ยนระหว่างระบบ"
+        },
+        {
+          "word": "fetch",
+          "meaning": "Fetch (ดึงข้อมูล): คำสั่งใน JavaScript เพื่อเรียก API"
+        },
+        {
+          "word": "postman",
+          "meaning": "Postman (ทดสอบ API): เครื่องมือทดสอบการเชื่อมต่อ API"
+        },
+        {
+          "word": "route",
+          "meaning": "Route (เส้นทาง): กำหนด URL สำหรับ API หรือหน้าเว็บ"
+        },
+        {
+          "word": "middleware",
+          "meaning": "Middleware (ตัวกลาง): โค้ดที่ทำงานก่อนถึงจุดประมวลผลหลัก"
+        },
+        {
+          "word": "endpoint",
+          "meaning": "Endpoint (จุดปลายทาง): ที่อยู่สำหรับเรียกใช้งาน API"
+        }
+      ],
+      "authentication": [
+        {
+          "word": "login",
+          "meaning": "Login (เข้าสู่ระบบ): ยืนยันตัวตนผู้ใช้"
+        },
+        {
+          "word": "register",
+          "meaning": "Register (สมัครสมาชิก): สร้างบัญชีผู้ใช้ใหม่"
+        },
+        {
+          "word": "token",
+          "meaning": "Token (โทเค็น): รหัสแทนตัวผู้ใช้ในการเข้าสู่ระบบ"
+        },
+        {
+          "word": "cookie",
+          "meaning": "Cookie (คุกกี้): ข้อมูลที่เก็บไว้ในเครื่องผู้ใช้"
+        },
+        {
+          "word": "session",
+          "meaning": "Session (เซสชัน): การเชื่อมต่อระหว่างผู้ใช้กับเว็บ"
+        },
+        {
+          "word": "jwt",
+          "meaning": "JWT (JSON Web Token): โทเค็นสำหรับยืนยันตัวตน"
+        },
+        {
+          "word": "bcrypt",
+          "meaning": "Bcrypt (การเข้ารหัส): ใช้เข้ารหัสรหัสผ่านให้ปลอดภัย"
+        },
+        {
+          "word": "oauth",
+          "meaning": "OAuth (มาตรฐานยืนยันตัวตน): ใช้ล็อกอินผ่านบริการภายนอก"
+        },
+        {
+          "word": "api_key",
+          "meaning": "API Key (รหัส API): รหัสเฉพาะสำหรับเข้าถึง API อย่างปลอดภัย"
+        }
+      ]
+    },
+    "fullstack": {
+      "frameworks": [
+        {
+          "word": "react",
+          "meaning": "React (ไลบรารี): เครื่องมือสร้างเว็บเชิงส่วนประกอบ"
+        },
+        {
+          "word": "vue",
+          "meaning": "Vue (เฟรมเวิร์ก): เฟรมเวิร์กเว็บที่เรียบง่ายและยืดหยุ่น"
+        },
+        {
+          "word": "angular",
+          "meaning": "Angular (เฟรมเวิร์ก): เครื่องมือสร้างเว็บเชิงโครงสร้างจาก Google"
+        },
+        {
+          "word": "nodejs",
+          "meaning": "Node.js (รันไทม์): ใช้รัน JavaScript ฝั่งเซิร์ฟเวอร์"
+        },
+        {
+          "word": "express",
+          "meaning": "Express (เฟรมเวิร์ก): เฟรมเวิร์กเบาและนิยมของ Node.js"
+        },
+        {
+          "word": "nextjs",
+          "meaning": "Next.js (เฟรมเวิร์ก): เครื่องมือ React สำหรับเรนเดอร์ฝั่งเซิร์ฟเวอร์"
+        },
+        {
+          "word": "firebase",
+          "meaning": "Firebase (แพลตฟอร์ม): บริการ backend สำเร็จรูปจาก Google"
+        }
+      ],
+      "deployment": [
+        {
+          "word": "hosting",
+          "meaning": "Hosting (บริการโฮสต์): เก็บไฟล์เว็บบนเซิร์ฟเวอร์"
+        },
+        {
+          "word": "domain",
+          "meaning": "Domain (ชื่อโดเมน): ชื่อเว็บ เช่น example.com"
+        },
+        {
+          "word": "ftp",
+          "meaning": "FTP (โปรโตคอลส่งไฟล์): ใช้ส่งไฟล์ขึ้นเซิร์ฟเวอร์"
+        },
+        {
+          "word": "deploy",
+          "meaning": "Deploy (เผยแพร่): การนำเว็บขึ้นใช้งานจริง"
+        },
+        {
+          "word": "ssl",
+          "meaning": "SSL Certificate (ใบรับรอง): เข้ารหัสการเชื่อมต่อเว็บ"
+        },
+        {
+          "word": "dns",
+          "meaning": "DNS (ระบบชื่อโดเมน): แปลงชื่อเว็บเป็น IP"
+        },
+        {
+          "word": "docker",
+          "meaning": "Docker (เครื่องมือจำลองระบบ): ใช้สร้างคอนเทนเนอร์สำหรับเว็บแอป"
+        },
+        {
+          "word": "github_actions",
+          "meaning": "GitHub Actions (ระบบ CI/CD): ระบบอัตโนมัติสำหรับทดสอบและ deploy"
+        },
+        {
+          "word": "ci_cd",
+          "meaning": "CI/CD (กระบวนการพัฒนาอัตโนมัติ): รวมการทดสอบและเผยแพร่ซอฟต์แวร์"
+        }
+      ],
+      "version_control": [
+        {
+          "word": "git",
+          "meaning": "Git (ควบคุมเวอร์ชัน): ติดตามการเปลี่ยนแปลงของโค้ด"
+        },
+        {
+          "word": "commit",
+          "meaning": "Commit (บันทึก): การบันทึกโค้ดใน Git"
+        },
+        {
+          "word": "push",
+          "meaning": "Push (อัปโหลด): ส่งโค้ดไปยังที่เก็บส่วนกลาง"
+        },
+        {
+          "word": "pull",
+          "meaning": "Pull (ดึง): ดึงโค้ดใหม่จากที่เก็บ"
+        },
+        {
+          "word": "merge",
+          "meaning": "Merge (รวม): รวมโค้ดจากหลายสาขาเข้าด้วยกัน"
+        }
+      ]
+    },
+    "web_tools": {
+      "ide_tools": [
+        {
+          "word": "vscode",
+          "meaning": "VS Code (เครื่องมือเขียนโค้ด): โปรแกรมยอดนิยมสำหรับนักพัฒนาเว็บ"
+        },
+        {
+          "word": "sublime",
+          "meaning": "Sublime Text (โปรแกรมเขียนโค้ด): โปรแกรมน้ำหนักเบาและรวดเร็ว"
+        },
+        {
+          "word": "notepadplusplus",
+          "meaning": "Notepad++ (ตัวแก้ไข): โปรแกรมฟรีสำหรับเขียนเว็บ"
+        },
+        {
+          "word": "extension",
+          "meaning": "Extension (ส่วนขยาย): เครื่องมือเสริมใน VS Code หรือเบราว์เซอร์"
+        },
+        {
+          "word": "formatter",
+          "meaning": "Formatter (ตัวจัดรูปแบบ): ช่วยจัดระเบียบโค้ดให้อ่านง่าย"
+        }
+      ],
+      "browser_tools": [
+        {
+          "word": "chrome",
+          "meaning": "Chrome (เบราว์เซอร์): เบราว์เซอร์ยอดนิยมของ Google"
+        },
+        {
+          "word": "firefox",
+          "meaning": "Firefox (เบราว์เซอร์): เน้นความปลอดภัยและความเร็ว"
+        },
+        {
+          "word": "devtools",
+          "meaning": "DevTools (เครื่องมือ): ใช้ตรวจสอบโค้ด HTML, CSS, JS"
+        },
+        {
+          "word": "inspector",
+          "meaning": "Inspector (ตัวตรวจสอบ): ดูโครงสร้างเว็บแบบเรียลไทม์"
+        },
+        {
+          "word": "debugger",
+          "meaning": "Debugger (ตัวดีบัก): ใช้ตรวจสอบข้อผิดพลาดในโค้ด"
+        },
+        {
+          "word": "console",
+          "meaning": "Console (คอนโซล): แสดงผลหรือข้อผิดพลาดจากโค้ด JavaScript"
+        },
+        {
+          "word": "emulator",
+          "meaning": "Emulator (ตัวจำลอง): จำลองการแสดงผลของอุปกรณ์ต่าง ๆ"
+        },
+        {
+          "word": "lighthouse",
+          "meaning": "Lighthouse (เครื่องมือตรวจสอบ): วิเคราะห์คุณภาพเว็บของ Google"
+        }
+      ],
+      "testing_tools": [
+        {
+          "word": "jest",
+          "meaning": "Jest (ทดสอบ): เครื่องมือทดสอบ JavaScript"
+        },
+        {
+          "word": "cypress",
+          "meaning": "Cypress (ทดสอบเว็บ): เครื่องมืออัตโนมัติทดสอบหน้าเว็บ"
+        },
+        {
+          "word": "postman",
+          "meaning": "Postman (API Testing): ทดสอบ API การเชื่อมต่อของเว็บ"
+        },
+        {
+          "word": "selenium",
+          "meaning": "Selenium (เครื่องมือทดสอบ): ใช้ทดสอบการทำงานของเว็บอัตโนมัติ"
+        }
+      ]
+    },
+    "best_practices": {
+      "seo": [
+        {
+          "word": "seo",
+          "meaning": "SEO (การปรับเว็บให้ติดอันดับ): ทำให้เว็บติดในผลค้นหา"
+        },
+        {
+          "word": "keyword",
+          "meaning": "Keyword (คำหลัก): คำที่ใช้ค้นหาใน Google"
+        },
+        {
+          "word": "meta_description",
+          "meaning": "Meta Description (คำอธิบาย): ข้อความสั้นในผลค้นหา"
+        },
+        {
+          "word": "title_tag",
+          "meaning": "Title Tag (ชื่อหน้า): ข้อความบนแท็บเบราว์เซอร์"
+        },
+        {
+          "word": "sitemap",
+          "meaning": "Sitemap (แผนผังเว็บไซต์): ไฟล์รวมลิงก์ในเว็บเพื่อช่วยให้ค้นหาเจอ"
+        },
+        {
+          "word": "robots",
+          "meaning": "Robots.txt (ไฟล์หุ่นยนต์): กำหนดหน้าเว็บที่ให้บอทเข้าถึงได้"
+        },
+        {
+          "word": "analytics",
+          "meaning": "Analytics (วิเคราะห์ผู้ใช้): เก็บข้อมูลการใช้งานของผู้ชมเว็บ"
+        }
+      ],
+      "responsive_design": [
+        {
+          "word": "media_query",
+          "meaning": "Media Query (เงื่อนไขหน้าจอ): ใช้ใน CSS สำหรับขนาดจอแตกต่างกัน"
+        },
+        {
+          "word": "viewport",
+          "meaning": "Viewport (ขนาดหน้าจอ): พื้นที่ที่แสดงผลหน้าเว็บ"
+        },
+        {
+          "word": "grid_system",
+          "meaning": "Grid System (ระบบตาราง): ช่วยจัดเลย์เอาต์ให้เป็นสัดส่วน"
+        },
+        {
+          "word": "breakpoint",
+          "meaning": "Breakpoint (จุดเปลี่ยน): ขนาดจอที่เว็บเปลี่ยนรูปแบบ"
+        },
+        {
+          "word": "mobile_friendly",
+          "meaning": "Mobile Friendly (เหมาะกับมือถือ): ออกแบบเว็บให้ใช้งานได้ดีบนอุปกรณ์พกพา"
+        },
+        {
+          "word": "viewport_meta",
+          "meaning": "Viewport Meta (แท็กขนาดหน้าจอ): กำหนดการแสดงผลบนอุปกรณ์ต่าง ๆ"
+        }
+      ],
+      "performance": [
+        {
+          "word": "cache",
+          "meaning": "Cache (แคช): เก็บข้อมูลชั่วคราวเพื่อโหลดเร็วขึ้น"
+        },
+        {
+          "word": "lazy_load",
+          "meaning": "Lazy Load (โหลดเมื่อจำเป็น): ช่วยลดเวลาโหลดหน้าเว็บ"
+        },
+        {
+          "word": "minify",
+          "meaning": "Minify (ย่อโค้ด): ลดขนาดไฟล์ HTML, CSS, JS"
+        },
+        {
+          "word": "cdn",
+          "meaning": "CDN (เครือข่ายกระจายเนื้อหา): ส่งข้อมูลจากเซิร์ฟเวอร์ที่ใกล้ผู้ใช้"
+        },
+        {
+          "word": "compression",
+          "meaning": "Compression (บีบอัด): ลดขนาดข้อมูลเพื่อเพิ่มความเร็ว"
+        },
+        {
+          "word": "optimize",
+          "meaning": "Optimize (ปรับให้เหมาะสม): ลดขนาดและเพิ่มความเร็วของเว็บ"
+        },
+        {
+          "word": "lazyload",
+          "meaning": "Lazyload (โหลดช้า): โหลดเฉพาะเนื้อหาที่เห็นบนหน้าจอ"
+        }
+      ]
+    }
+  },
+   "ai": {
+    "machine_learning": {
+      "supervised_learning": [
+        {
+          "word": "machine_learning",
+          "meaning": "Machine Learning (การเรียนรู้ของเครื่อง): การฝึกคอมพิวเตอร์ให้เรียนรู้จากข้อมูลโดยไม่ต้องเขียนโปรแกรมเฉพาะทาง"
+        },
+        {
+          "word": "supervised_learning",
+          "meaning": "Supervised Learning (การเรียนรู้แบบมีผู้สอน): ใช้ข้อมูลที่มีคำตอบในการฝึกโมเดล"
+        },
+        {
+          "word": "classification",
+          "meaning": "Classification (การจำแนกประเภท): การทำนายว่าข้อมูลอยู่ในกลุ่มใด"
+        },
+        {
+          "word": "regression",
+          "meaning": "Regression (การถดถอย): การทำนายค่าตัวเลขจากข้อมูล"
+        },
+        {
+          "word": "training_data",
+          "meaning": "Training Data (ข้อมูลฝึกสอน): ชุดข้อมูลที่ใช้สอนโมเดล"
+        },
+        {
+          "word": "testing_data",
+          "meaning": "Testing Data (ข้อมูลทดสอบ): ใช้ตรวจสอบประสิทธิภาพของโมเดล"
+        },
+        {
+          "word": "cross_validation",
+          "meaning": "Cross Validation (การตรวจสอบไขว้): เทคนิคตรวจสอบความแม่นยำของโมเดล"
+        }
+      ],
+      "unsupervised_learning": [
+        {
+          "word": "unsupervised_learning",
+          "meaning": "Unsupervised Learning (การเรียนรู้แบบไม่มีผู้สอน): การหาความสัมพันธ์ของข้อมูลโดยไม่มีคำตอบ"
+        },
+        {
+          "word": "clustering",
+          "meaning": "Clustering (การจัดกลุ่ม): การรวมข้อมูลที่มีลักษณะคล้ายกัน"
+        },
+        {
+          "word": "kmeans",
+          "meaning": "K-Means (อัลกอริทึมจัดกลุ่ม): วิธีจัดกลุ่มข้อมูลแบบแบ่งศูนย์กลาง"
+        },
+        {
+          "word": "dimensionality_reduction",
+          "meaning": "Dimensionality Reduction (ลดมิติข้อมูล): ลดจำนวนตัวแปรโดยยังคงข้อมูลสำคัญ"
+        },
+        {
+          "word": "pca",
+          "meaning": "PCA (Principal Component Analysis): เทคนิควิเคราะห์องค์ประกอบหลัก"
+        },
+        {
+          "word": "anomaly_detection",
+          "meaning": "Anomaly Detection (การตรวจจับค่าผิดปกติ): หาค่าที่แตกต่างจากรูปแบบปกติ"
+        }
+      ],
+      "reinforcement_learning": [
+        {
+          "word": "reinforcement_learning",
+          "meaning": "Reinforcement Learning (การเรียนรู้แบบเสริมแรง): โมเดลเรียนรู้จากการลองผิดลองถูก"
+        },
+        {
+          "word": "agent",
+          "meaning": "Agent (ตัวกระทำ): สิ่งที่ตัดสินใจในสภาพแวดล้อม"
+        },
+        {
+          "word": "reward",
+          "meaning": "Reward (รางวัล): ค่าที่ให้โมเดลเมื่อทำสิ่งที่ถูกต้อง"
+        },
+        {
+          "word": "environment",
+          "meaning": "Environment (สภาพแวดล้อม): สิ่งที่โมเดลมีปฏิสัมพันธ์ด้วย"
+        },
+        {
+          "word": "policy",
+          "meaning": "Policy (นโยบาย): กฎที่บอกให้โมเดลเลือกการกระทำใด"
+        },
+        {
+          "word": "value_function",
+          "meaning": "Value Function (ฟังก์ชันค่า): ใช้วัดผลลัพธ์ในอนาคตจากสถานะปัจจุบัน"
+        }
+      ],
+      "feature_engineering": [
+        {
+          "word": "feature",
+          "meaning": "Feature (คุณลักษณะ): ข้อมูลที่ใช้ในการฝึกโมเดล AI"
+        },
+        {
+          "word": "feature_selection",
+          "meaning": "Feature Selection (การเลือกคุณลักษณะ): การคัดเลือกตัวแปรที่สำคัญที่สุด"
+        },
+        {
+          "word": "normalization",
+          "meaning": "Normalization (การปรับสเกล): การทำให้ค่าข้อมูลอยู่ในช่วงเดียวกัน"
+        },
+        {
+          "word": "overfitting",
+          "meaning": "Overfitting (การเรียนรู้มากเกินไป): โมเดลจำข้อมูลมากเกินจนไม่แม่นกับข้อมูลใหม่"
+        },
+        {
+          "word": "underfitting",
+          "meaning": "Underfitting (เรียนรู้น้อยเกินไป): โมเดลไม่เข้าใจรูปแบบของข้อมูลดีพอ"
+        },
+        {
+          "word": "hyperparameter",
+          "meaning": "Hyperparameter (ค่ากำหนดก่อนฝึก): ตัวแปรที่ควบคุมการทำงานของโมเดล"
+        },
+        {
+          "word": "model_evaluation",
+          "meaning": "Model Evaluation (การประเมินโมเดล): ตรวจสอบคุณภาพของโมเดล"
+        }
+      ]
+    },
+    "deep_learning": {
+      "neural_networks": [
+        {
+          "word": "deep_learning",
+          "meaning": "Deep Learning (การเรียนรู้เชิงลึก): การเรียนรู้ด้วยโครงข่ายประสาทเทียมหลายชั้น"
+        },
+        {
+          "word": "neuron",
+          "meaning": "Neuron (เซลล์ประสาทเทียม): หน่วยพื้นฐานในโครงข่ายที่ประมวลผลข้อมูล"
+        },
+        {
+          "word": "activation_function",
+          "meaning": "Activation Function (ฟังก์ชันกระตุ้น): กำหนดว่าค่าของนิวรอนจะส่งต่อหรือไม่"
+        },
+        {
+          "word": "cnn",
+          "meaning": "CNN (Convolutional Neural Network): ใช้สำหรับประมวลผลภาพ"
+        },
+        {
+          "word": "rnn",
+          "meaning": "RNN (Recurrent Neural Network): ใช้สำหรับข้อมูลลำดับ เช่น ข้อความ"
+        },
+        {
+          "word": "lstm",
+          "meaning": "LSTM (Long Short-Term Memory): รูปแบบ RNN ที่จำข้อมูลได้นานขึ้น"
+        },
+        {
+          "word": "dropout",
+          "meaning": "Dropout (เทคนิคป้องกัน overfitting): การปิดนิวรอนบางส่วนระหว่างการฝึก"
+        }
+      ],
+      "training_process": [
+        {
+          "word": "epoch",
+          "meaning": "Epoch (รอบการฝึก): จำนวนครั้งที่โมเดลเรียนรู้จากข้อมูลทั้งหมด"
+        },
+        {
+          "word": "batch",
+          "meaning": "Batch (ชุดข้อมูลย่อย): ข้อมูลที่แบ่งเพื่อฝึกในแต่ละรอบ"
+        },
+        {
+          "word": "loss_function",
+          "meaning": "Loss Function (ฟังก์ชันสูญเสีย): ใช้วัดความคลาดเคลื่อนระหว่างผลทำนายกับค่าจริง"
+        },
+        {
+          "word": "optimizer",
+          "meaning": "Optimizer (ตัวปรับแต่ง): ปรับค่าพารามิเตอร์ให้โมเดลแม่นยำขึ้น"
+        },
+        {
+          "word": "gradient_descent",
+          "meaning": "Gradient Descent (วิธีปรับลดความคลาดเคลื่อน): เทคนิคหาค่าที่ทำให้ความผิดพลาดน้อยลง"
+        },
+        {
+          "word": "learning_rate",
+          "meaning": "Learning Rate (อัตราการเรียนรู้): กำหนดความเร็วในการปรับค่าพารามิเตอร์"
+        }
+      ],
+      "advanced_networks": [
+        {
+          "word": "autoencoder",
+          "meaning": "Autoencoder (โครงข่ายเข้ารหัสอัตโนมัติ): ใช้บีบข้อมูลและสร้างกลับใหม่"
+        },
+        {
+          "word": "gan",
+          "meaning": "GAN (Generative Adversarial Network): โมเดลสร้างข้อมูลใหม่ เช่น ภาพ"
+        },
+        {
+          "word": "transformer",
+          "meaning": "Transformer (สถาปัตยกรรมโครงข่าย): โมเดลที่ใช้ใน ChatGPT และ AI สมัยใหม่"
+        },
+        {
+          "word": "attention",
+          "meaning": "Attention (กลไกความสนใจ): ช่วยให้โมเดลเลือกข้อมูลสำคัญในการเรียนรู้"
+        },
+        {
+          "word": "encoder",
+          "meaning": "Encoder (ตัวเข้ารหัส): ส่วนที่แปลงข้อมูลเข้าเป็นเวกเตอร์"
+        },
+        {
+          "word": "decoder",
+          "meaning": "Decoder (ตัวถอดรหัส): แปลงเวกเตอร์กลับเป็นผลลัพธ์"
+        },
+        {
+          "word": "batch_normalization",
+          "meaning": "Batch Normalization (การปรับค่าในแต่ละชั้น): ช่วยให้การฝึกโมเดลมีเสถียรภาพ"
+        }
+      ]
+    },
+    "ai_applications": {
+      "natural_language_processing": [
+        {
+          "word": "nlp",
+          "meaning": "NLP (Natural Language Processing): การประมวลผลภาษาธรรมชาติ"
+        },
+        {
+          "word": "tokenization",
+          "meaning": "Tokenization (การแบ่งหน่วยคำ): แยกข้อความออกเป็นคำหรือประโยค"
+        },
+        {
+          "word": "embedding",
+          "meaning": "Embedding (การแทนค่าคำ): แปลงคำเป็นตัวเลขเพื่อให้คอมพิวเตอร์เข้าใจ"
+        },
+        {
+          "word": "sentiment_analysis",
+          "meaning": "Sentiment Analysis (วิเคราะห์อารมณ์): ตรวจสอบว่าข้อความมีอารมณ์เชิงบวกหรือลบ"
+        },
+        {
+          "word": "translation",
+          "meaning": "Translation (การแปลภาษา): แปลงข้อความจากภาษาหนึ่งสู่อีกภาษา"
+        },
+        {
+          "word": "chatbot",
+          "meaning": "Chatbot (แชตบอต): โปรแกรมตอบโต้ข้อความอัตโนมัติ"
+        }
+      ],
+      "computer_vision": [
+        {
+          "word": "computer_vision",
+          "meaning": "Computer Vision (การมองเห็นของคอมพิวเตอร์): การทำให้คอมพิวเตอร์เข้าใจภาพ"
+        },
+        {
+          "word": "object_detection",
+          "meaning": "Object Detection (การตรวจจับวัตถุ): การระบุสิ่งของในภาพ"
+        },
+        {
+          "word": "image_classification",
+          "meaning": "Image Classification (การจำแนกภาพ): การจัดประเภทของภาพ"
+        },
+        {
+          "word": "segmentation",
+          "meaning": "Segmentation (การแบ่งส่วนภาพ): การระบุขอบเขตของวัตถุในภาพ"
+        },
+        {
+          "word": "ocr",
+          "meaning": "OCR (Optical Character Recognition): การแปลงภาพตัวอักษรให้เป็นข้อความ"
+        },
+        {
+          "word": "facial_recognition",
+          "meaning": "Facial Recognition (การจดจำใบหน้า): การระบุบุคคลจากภาพใบหน้า"
+        }
+      ],
+      "robotics": [
+        {
+          "word": "robotics",
+          "meaning": "Robotics (หุ่นยนต์): การออกแบบและควบคุมหุ่นยนต์ให้ทำงานอัตโนมัติ"
+        },
+        {
+          "word": "autonomous_vehicle",
+          "meaning": "Autonomous Vehicle (ยานยนต์อัตโนมัติ): รถที่สามารถขับเองได้"
+        },
+        {
+          "word": "sensor",
+          "meaning": "Sensor (เซนเซอร์): อุปกรณ์ตรวจจับสิ่งรอบข้างของหุ่นยนต์"
+        },
+        {
+          "word": "actuator",
+          "meaning": "Actuator (ตัวขับเคลื่อน): ส่วนที่ทำให้หุ่นยนต์เคลื่อนไหว"
+        },
+        {
+          "word": "path_planning",
+          "meaning": "Path Planning (การวางเส้นทาง): การคำนวณเส้นทางการเคลื่อนที่ของหุ่นยนต์"
+        },
+        {
+          "word": "drone",
+          "meaning": "Drone (โดรน): หุ่นยนต์บินที่ควบคุมด้วยคอมพิวเตอร์"
+        }
+      ],
+      "speech_processing": [
+        {
+          "word": "speech_recognition",
+          "meaning": "Speech Recognition (การรู้จำเสียงพูด): การแปลงเสียงเป็นข้อความ"
+        },
+        {
+          "word": "text_to_speech",
+          "meaning": "Text to Speech (การแปลงข้อความเป็นเสียง): ทำให้ AI พูดได้"
+        },
+        {
+          "word": "voice_assistant",
+          "meaning": "Voice Assistant (ผู้ช่วยเสียง): โปรแกรมที่ตอบสนองด้วยเสียง เช่น Siri หรือ Alexa"
+        },
+        {
+          "word": "audio_analysis",
+          "meaning": "Audio Analysis (การวิเคราะห์เสียง): การตรวจจับโทนเสียงหรืออารมณ์จากเสียง"
+        },
+        {
+          "word": "speech_synthesis",
+          "meaning": "Speech Synthesis (สังเคราะห์เสียงพูด): การสร้างเสียงจำลองจากข้อความ"
+        }
+      ],
+      "ai_in_healthcare": [
+        {
+          "word": "medical_ai",
+          "meaning": "Medical AI (ปัญญาประดิษฐ์ทางการแพทย์): ใช้ช่วยวินิจฉัยโรคจากภาพหรือข้อมูลผู้ป่วย"
+        },
+        {
+          "word": "xray_analysis",
+          "meaning": "X-ray Analysis (การวิเคราะห์ภาพเอกซเรย์): การใช้ AI ตรวจหาความผิดปกติ"
+        },
+        {
+          "word": "drug_discovery",
+          "meaning": "Drug Discovery (การค้นหายาใหม่): ใช้ AI ทำนายโมเลกุลที่มีประสิทธิภาพ"
+        },
+        {
+          "word": "health_monitoring",
+          "meaning": "Health Monitoring (การติดตามสุขภาพ): ใช้ AI วิเคราะห์ข้อมูลจากอุปกรณ์สวมใส่"
+        },
+        {
+          "word": "predictive_diagnosis",
+          "meaning": "Predictive Diagnosis (การวินิจฉัยล่วงหน้า): ใช้ข้อมูลคาดการณ์โรคล่วงหน้า"
+        }
+      ]
+    },
+    "ai_ethics": {
+      "ethical_principles": [
+        {
+          "word": "ethics",
+          "meaning": "Ethics (จริยธรรม): แนวทางที่กำหนดว่าการใช้ AI ควรทำอย่างถูกต้อง"
+        },
+        {
+          "word": "bias",
+          "meaning": "Bias (อคติ): ความลำเอียงของข้อมูลที่ทำให้ผลลัพธ์ไม่เป็นธรรม"
+        },
+        {
+          "word": "fairness",
+          "meaning": "Fairness (ความยุติธรรม): การทำให้ระบบ AI ปฏิบัติต่อทุกกลุ่มอย่างเท่าเทียม"
+        },
+        {
+          "word": "transparency",
+          "meaning": "Transparency (ความโปร่งใส): ความสามารถในการอธิบายการตัดสินใจของ AI"
+        },
+        {
+          "word": "accountability",
+          "meaning": "Accountability (ความรับผิดชอบ): การกำหนดผู้รับผิดชอบต่อผลการทำงานของ AI"
+        },
+        {
+          "word": "privacy_protection",
+          "meaning": "Privacy Protection (การปกป้องความเป็นส่วนตัว): การรักษาข้อมูลส่วนบุคคลของผู้ใช้"
+        }
+      ],
+      "regulation_and_governance": [
+        {
+          "word": "ai_governance",
+          "meaning": "AI Governance (การกำกับดูแล AI): การวางนโยบายและกฎหมายเพื่อควบคุมการใช้ AI"
+        },
+        {
+          "word": "data_ethics",
+          "meaning": "Data Ethics (จริยธรรมข้อมูล): การใช้ข้อมูลอย่างมีความรับผิดชอบ"
+        },
+        {
+          "word": "responsible_ai",
+          "meaning": "Responsible AI (การใช้ AI อย่างรับผิดชอบ): การสร้างระบบที่ไม่ก่อให้เกิดอันตราย"
+        },
+        {
+          "word": "human_in_the_loop",
+          "meaning": "Human-in-the-Loop (มนุษย์ร่วมตัดสินใจ): การให้มนุษย์มีส่วนร่วมในการตัดสินใจของ AI"
+        }
+      ],
+      "societal_impact": [
+        {
+          "word": "ai_bias",
+          "meaning": "AI Bias (อคติใน AI): ความลำเอียงของระบบที่เกิดจากข้อมูลฝึกไม่สมดุล"
+        },
+        {
+          "word": "deepfake",
+          "meaning": "Deepfake (ภาพปลอม): การสร้างภาพหรือวิดีโอปลอมด้วย AI"
+        },
+        {
+          "word": "privacy_concern",
+          "meaning": "Privacy Concern (ความกังวลด้านความเป็นส่วนตัว): ปัญหาการเก็บข้อมูลผู้ใช้โดยไม่ยินยอม"
+        },
+        {
+          "word": "job_automation",
+          "meaning": "Job Automation (การแทนแรงงาน): การใช้ AI ทำงานแทนมนุษย์"
+        },
+        {
+          "word": "ethical_ai",
+          "meaning": "Ethical AI (AI มีจริยธรรม): การออกแบบระบบที่เคารพสิทธิ์มนุษย์"
+        }
+      ]
+    },
+    "tools_and_frameworks": {
+      "ai_tools": [
+        {
+          "word": "tensorflow",
+          "meaning": "TensorFlow (เฟรมเวิร์ก AI): เครื่องมือโอเพ่นซอร์สสำหรับสร้างโมเดล Machine Learning"
+        },
+        {
+          "word": "pytorch",
+          "meaning": "PyTorch (เฟรมเวิร์ก AI): ใช้ในการพัฒนา Deep Learning อย่างยืดหยุ่น"
+        },
+        {
+          "word": "scikit_learn",
+          "meaning": "Scikit-learn (ไลบรารีเรียนรู้ของเครื่อง): เครื่องมือสำหรับการวิเคราะห์ข้อมูล"
+        },
+        {
+          "word": "keras",
+          "meaning": "Keras (เฟรมเวิร์ก Deep Learning): ใช้งานง่ายและนิยมในงานวิจัย"
+        },
+        {
+          "word": "openai",
+          "meaning": "OpenAI (องค์กร AI): ผู้พัฒนา ChatGPT และเครื่องมือ AI ชั้นนำ"
+        },
+        {
+          "word": "huggingface",
+          "meaning": "Hugging Face (แพลตฟอร์มโมเดลภาษา): รวบรวมโมเดล NLP มากมาย"
+        },
+        {
+          "word": "colab",
+          "meaning": "Google Colab (เครื่องมือทดลองโค้ด): ใช้รันโค้ด Python ออนไลน์ฟรี"
+        }
+      ],
+      "ai_infrastructure": [
+        {
+          "word": "gpu",
+          "meaning": "GPU (Graphics Processing Unit): หน่วยประมวลผลที่ใช้ฝึกโมเดล AI"
+        },
+        {
+          "word": "dataset",
+          "meaning": "Dataset (ชุดข้อมูล): ข้อมูลที่ใช้สำหรับฝึกโมเดล AI"
+        },
+        {
+          "word": "model",
+          "meaning": "Model (โมเดล): ผลลัพธ์จากการฝึก AI ด้วยข้อมูล"
+        },
+        {
+          "word": "inference",
+          "meaning": "Inference (การทำนาย): ขั้นตอนที่ AI ใช้ทำนายข้อมูลใหม่"
+        },
+        {
+          "word": "deployment",
+          "meaning": "Deployment (การนำไปใช้งาน): การนำโมเดลที่ฝึกแล้วไปใช้งานจริง"
+        },
+        {
+          "word": "api",
+          "meaning": "API (อินเทอร์เฟซการเชื่อมต่อ): วิธีให้แอปพลิเคชันเชื่อมต่อกับโมเดล AI"
+        },
+        {
+          "word": "cloud_ai",
+          "meaning": "Cloud AI (AI บนคลาวด์): การใช้บริการ AI ผ่านระบบคลาวด์"
+        }
+      ],
+      "platforms_and_libraries": [
+        {
+          "word": "mlflow",
+          "meaning": "MLflow (เครื่องมือจัดการโมเดล): ใช้ติดตามและปรับปรุงโมเดล Machine Learning"
+        },
+        {
+          "word": "jupyter",
+          "meaning": "Jupyter Notebook (สมุดรันโค้ด): เครื่องมือเขียนและทดลองโค้ด Python"
+        },
+        {
+          "word": "google_ai",
+          "meaning": "Google AI (แพลตฟอร์ม AI): เครื่องมือ AI ของ Google Cloud"
+        },
+        {
+          "word": "azure_ml",
+          "meaning": "Azure ML (บริการ AI): ระบบ Machine Learning ของ Microsoft"
+        },
+        {
+          "word": "auto_ml",
+          "meaning": "AutoML (การสร้างโมเดลอัตโนมัติ): AI ที่ช่วยสร้างโมเดลเองโดยไม่ต้องเขียนโค้ด"
+        },
+        {
+          "word": "data_preprocessing",
+          "meaning": "Data Preprocessing (การเตรียมข้อมูล): ขั้นตอนจัดการข้อมูลก่อนนำไปฝึกโมเดล"
+        },
+        {
+          "word": "model_serving",
+          "meaning": "Model Serving (การให้บริการโมเดล): การนำโมเดล AI ไปใช้งานจริงผ่าน API"
+        }
+      ]
+    }
+  },
+   "security": {
+    "cyber_basics": {
+      "fundamentals": [
+        {
+          "word": "cybersecurity",
+          "meaning": "Cybersecurity (ความปลอดภัยไซเบอร์): การป้องกันระบบคอมพิวเตอร์จากการโจมตี"
+        },
+        {
+          "word": "information_security",
+          "meaning": "Information Security (ความปลอดภัยสารสนเทศ): การปกป้องข้อมูลจากการเข้าถึงโดยไม่ได้รับอนุญาต"
+        },
+        {
+          "word": "confidentiality",
+          "meaning": "Confidentiality (การรักษาความลับ): ป้องกันไม่ให้ข้อมูลรั่วไหล"
+        },
+        {
+          "word": "integrity",
+          "meaning": "Integrity (ความถูกต้องของข้อมูล): รักษาข้อมูลให้ถูกต้องครบถ้วน"
+        },
+        {
+          "word": "availability",
+          "meaning": "Availability (ความพร้อมใช้งาน): ทำให้ระบบพร้อมให้บริการเสมอ"
+        },
+        {
+          "word": "risk",
+          "meaning": "Risk (ความเสี่ยง): โอกาสที่เหตุการณ์ไม่คาดคิดจะเกิดขึ้นกับข้อมูล"
+        },
+        {
+          "word": "vulnerability",
+          "meaning": "Vulnerability (ช่องโหว่): จุดอ่อนของระบบที่อาจถูกโจมตีได้"
+        }
+      ],
+      "policies": [
+        {
+          "word": "security_policy",
+          "meaning": "Security Policy (นโยบายความปลอดภัย): กฎระเบียบในการรักษาความปลอดภัยขององค์กร"
+        },
+        {
+          "word": "user_awareness",
+          "meaning": "User Awareness (ความรู้ของผู้ใช้): การอบรมให้ผู้ใช้ระวังภัยไซเบอร์"
+        },
+        {
+          "word": "compliance",
+          "meaning": "Compliance (การปฏิบัติตามกฎหมาย): การทำให้ระบบสอดคล้องกับข้อบังคับด้านความปลอดภัย"
+        }
+      ],
+      "fundamentals_extra": [
+        {
+          "word": "patch_management",
+          "meaning": "Patch Management (การจัดการแพตช์): การอัปเดตระบบเพื่อแก้ไขช่องโหว่"
+        },
+        {
+          "word": "security_audit",
+          "meaning": "Security Audit (การตรวจสอบความปลอดภัย): การประเมินความปลอดภัยของระบบ"
+        },
+        {
+          "word": "threat_intelligence",
+          "meaning": "Threat Intelligence (ข่าวกรองภัยคุกคาม): การรวบรวมข้อมูลเกี่ยวกับการโจมตี"
+        },
+        {
+          "word": "incident_report",
+          "meaning": "Incident Report (รายงานเหตุการณ์): เอกสารสรุปเหตุการณ์ความปลอดภัย"
+        },
+        {
+          "word": "security_framework",
+          "meaning": "Security Framework (กรอบความปลอดภัย): มาตรฐานในการจัดการความปลอดภัย"
+        },
+        {
+          "word": "forensics",
+          "meaning": "Forensics (นิติวิทยาศาสตร์ดิจิทัล): การสืบสวนหาหลักฐานจากระบบคอมพิวเตอร์"
+        },
+        {
+          "word": "endpoint",
+          "meaning": "Endpoint (อุปกรณ์ปลายทาง): คอมพิวเตอร์หรือมือถือที่เชื่อมต่อระบบ"
+        }
+      ],
+      "training_extra": [
+        {
+          "word": "cyber_ethics",
+          "meaning": "Cyber Ethics (จริยธรรมไซเบอร์): แนวทางการใช้อินเทอร์เน็ตอย่างรับผิดชอบ"
+        },
+        {
+          "word": "security_awareness",
+          "meaning": "Security Awareness (การตระหนักด้านความปลอดภัย): ความรู้พื้นฐานในการป้องกันภัยไซเบอร์"
+        },
+        {
+          "word": "incident_plan",
+          "meaning": "Incident Plan (แผนรับมือเหตุการณ์): ขั้นตอนการตอบสนองเมื่อเกิดเหตุไม่ปกติ"
+        },
+        {
+          "word": "penetration_test",
+          "meaning": "Penetration Test (การทดสอบเจาะระบบ): การจำลองโจมตีเพื่อหาช่องโหว่"
+        },
+        {
+          "word": "risk_assessment",
+          "meaning": "Risk Assessment (การประเมินความเสี่ยง): การวิเคราะห์จุดอ่อนของระบบ"
+        },
+        {
+          "word": "asset_management",
+          "meaning": "Asset Management (การจัดการทรัพยากร): การดูแลอุปกรณ์และข้อมูลขององค์กร"
+        },
+        {
+          "word": "patch_update",
+          "meaning": "Patch Update (อัปเดตแพตช์): การติดตั้งการอัปเดตเพื่อแก้ไขช่องโหว่"
+        }
+      ]
+    },
+    "data_protection": {
+      "encryption": [
+        {
+          "word": "encryption",
+          "meaning": "Encryption (การเข้ารหัส): แปลงข้อมูลให้อ่านไม่ได้โดยคนอื่น"
+        },
+        {
+          "word": "decryption",
+          "meaning": "Decryption (การถอดรหัส): แปลงข้อมูลกลับมาให้อ่านได้"
+        },
+        {
+          "word": "symmetric_key",
+          "meaning": "Symmetric Key (กุญแจสมมาตร): ใช้กุญแจเดียวกันในการเข้ารหัสและถอดรหัส"
+        },
+        {
+          "word": "asymmetric_key",
+          "meaning": "Asymmetric Key (กุญแจอสมมาตร): ใช้กุญแจคู่สาธารณะและส่วนตัว"
+        },
+        {
+          "word": "hashing",
+          "meaning": "Hashing (การแฮช): แปลงข้อมูลเป็นค่าคงที่เพื่อยืนยันความถูกต้อง"
+        },
+        {
+          "word": "digital_signature",
+          "meaning": "Digital Signature (ลายเซ็นดิจิทัล): ใช้ยืนยันว่าข้อมูลมาจากผู้ส่งจริง"
+        },
+        {
+          "word": "ssl",
+          "meaning": "SSL (Secure Socket Layer): โปรโตคอลเข้ารหัสข้อมูลระหว่างเว็บไซต์และผู้ใช้"
+        }
+      ],
+      "data_privacy": [
+        {
+          "word": "privacy",
+          "meaning": "Privacy (ความเป็นส่วนตัว): การควบคุมข้อมูลส่วนบุคคลของผู้ใช้"
+        },
+        {
+          "word": "gdpr",
+          "meaning": "GDPR (กฎหมายคุ้มครองข้อมูล): กฎของสหภาพยุโรปว่าด้วยการปกป้องข้อมูลส่วนบุคคล"
+        },
+        {
+          "word": "data_breach",
+          "meaning": "Data Breach (การรั่วไหลของข้อมูล): เหตุการณ์ที่ข้อมูลถูกเข้าถึงโดยไม่ได้รับอนุญาต"
+        },
+        {
+          "word": "anonymization",
+          "meaning": "Anonymization (การลบตัวตน): การทำให้ข้อมูลไม่สามารถระบุถึงบุคคลได้"
+        },
+        {
+          "word": "backup",
+          "meaning": "Backup (การสำรองข้อมูล): การคัดลอกข้อมูลไว้เพื่อป้องกันการสูญหาย"
+        },
+        {
+          "word": "recovery",
+          "meaning": "Recovery (การกู้คืน): การนำข้อมูลที่สำรองไว้กลับมาใช้ใหม่"
+        },
+        {
+          "word": "tokenization",
+          "meaning": "Tokenization (การแทนค่า): การแทนข้อมูลสำคัญด้วยโค้ดชั่วคราว"
+        }
+      ],
+      "data_privacy_extra": [
+        {
+          "word": "data_classification",
+          "meaning": "Data Classification (การจำแนกข้อมูล): การจัดข้อมูลตามระดับความสำคัญ"
+        },
+        {
+          "word": "pii",
+          "meaning": "PII (ข้อมูลส่วนบุคคล): ข้อมูลที่สามารถระบุตัวบุคคลได้"
+        },
+        {
+          "word": "access_restriction",
+          "meaning": "Access Restriction (ข้อจำกัดการเข้าถึง): จำกัดสิทธิ์การเข้าถึงข้อมูล"
+        },
+        {
+          "word": "data_loss_prevention",
+          "meaning": "Data Loss Prevention (DLP): เทคโนโลยีป้องกันการรั่วไหลของข้อมูล"
+        },
+        {
+          "word": "data_retention",
+          "meaning": "Data Retention (การเก็บข้อมูล): การกำหนดระยะเวลาการจัดเก็บข้อมูล"
+        },
+        {
+          "word": "secure_storage",
+          "meaning": "Secure Storage (การจัดเก็บข้อมูลอย่างปลอดภัย): ป้องกันการเข้าถึงข้อมูลโดยไม่ได้รับอนุญาต"
+        },
+        {
+          "word": "data_integrity",
+          "meaning": "Data Integrity (ความถูกต้องของข้อมูล): รักษาความสมบูรณ์ของข้อมูล"
+        }
+      ],
+      "encryption_extra": [
+        {
+          "word": "crypto_key",
+          "meaning": "Crypto Key (กุญแจเข้ารหัส): ใช้ในการเข้ารหัสข้อมูล"
+        },
+        {
+          "word": "twofish",
+          "meaning": "Twofish (อัลกอริทึมเข้ารหัส): ระบบเข้ารหัสข้อมูลที่มีความปลอดภัยสูง"
+        },
+        {
+          "word": "aes",
+          "meaning": "AES (Advanced Encryption Standard): มาตรฐานการเข้ารหัสที่นิยมใช้ทั่วโลก"
+        },
+        {
+          "word": "rsa",
+          "meaning": "RSA (อัลกอริทึมเข้ารหัสสาธารณะ): ใช้กุญแจคู่สาธารณะและส่วนตัว"
+        },
+        {
+          "word": "checksum",
+          "meaning": "Checksum (ค่าตรวจสอบ): ใช้ตรวจสอบความถูกต้องของไฟล์ข้อมูล"
+        },
+        {
+          "word": "block_cipher",
+          "meaning": "Block Cipher (การเข้ารหัสแบบบล็อก): การเข้ารหัสข้อมูลทีละส่วน"
+        },
+        {
+          "word": "key_rotation",
+          "meaning": "Key Rotation (การเปลี่ยนกุญแจ): เปลี่ยนกุญแจเข้ารหัสเป็นระยะเพื่อความปลอดภัย"
+        }
+      ]
+    },
+    "network_security": {
+      "firewalls": [
+        {
+          "word": "firewall",
+          "meaning": "Firewall (ไฟร์วอลล์): อุปกรณ์กรองการรับส่งข้อมูลเข้าออกเครือข่าย"
+        },
+        {
+          "word": "proxy",
+          "meaning": "Proxy (พร็อกซี): เซิร์ฟเวอร์ที่ทำหน้าที่เป็นตัวกลางระหว่างผู้ใช้กับอินเทอร์เน็ต"
+        },
+        {
+          "word": "vpn",
+          "meaning": "VPN (Virtual Private Network): เครือข่ายส่วนตัวที่เข้ารหัสข้อมูลขณะส่งผ่านอินเทอร์เน็ต"
+        },
+        {
+          "word": "ids",
+          "meaning": "IDS (Intrusion Detection System): ระบบตรวจจับการบุกรุก"
+        },
+        {
+          "word": "ips",
+          "meaning": "IPS (Intrusion Prevention System): ระบบป้องกันการบุกรุก"
+        },
+        {
+          "word": "dmz",
+          "meaning": "DMZ (Demilitarized Zone): โซนกึ่งกลางระหว่างเครือข่ายภายในกับอินเทอร์เน็ต"
+        },
+        {
+          "word": "honeypot",
+          "meaning": "Honeypot (กับดักดิจิทัล): ระบบจำลองเพื่อหลอกและจับผู้โจมตี"
+        }
+      ],
+      "secure_protocols": [
+        {
+          "word": "https",
+          "meaning": "HTTPS (โปรโตคอลปลอดภัย): การเชื่อมต่อเว็บไซต์แบบเข้ารหัส"
+        },
+        {
+          "word": "ssh",
+          "meaning": "SSH (Secure Shell): โปรโตคอลสำหรับการเข้าถึงเครื่องระยะไกลอย่างปลอดภัย"
+        },
+        {
+          "word": "sftp",
+          "meaning": "SFTP (Secure File Transfer Protocol): ใช้ส่งไฟล์อย่างปลอดภัย"
+        },
+        {
+          "word": "tls",
+          "meaning": "TLS (Transport Layer Security): โปรโตคอลเข้ารหัสรุ่นใหม่แทน SSL"
+        }
+      ],
+      "network_extra": [
+        {
+          "word": "dos_attack",
+          "meaning": "DoS Attack (การโจมตีแบบปฏิเสธบริการ): ทำให้ระบบไม่สามารถให้บริการได้"
+        },
+        {
+          "word": "port_filtering",
+          "meaning": "Port Filtering (การกรองพอร์ต): จำกัดการสื่อสารเฉพาะพอร์ตที่อนุญาต"
+        },
+        {
+          "word": "vpn_tunnel",
+          "meaning": "VPN Tunnel (ช่องสัญญาณเข้ารหัส): การเชื่อมต่อ VPN ที่ปลอดภัย"
+        },
+        {
+          "word": "mac_filtering",
+          "meaning": "MAC Filtering (การกรองที่อยู่ MAC): จำกัดอุปกรณ์ที่เข้าถึงเครือข่าย"
+        },
+        {
+          "word": "packet_inspection",
+          "meaning": "Packet Inspection (การตรวจสอบแพ็กเก็ต): การวิเคราะห์ข้อมูลที่รับส่งในเครือข่าย"
+        },
+        {
+          "word": "network_monitoring",
+          "meaning": "Network Monitoring (การตรวจสอบเครือข่าย): เฝ้าระวังการทำงานของระบบ"
+        },
+        {
+          "word": "ip_whitelisting",
+          "meaning": "IP Whitelisting (รายชื่อ IP ที่อนุญาต): จำกัดการเข้าถึงระบบเฉพาะ IP ที่กำหนด"
+        }
+      ],
+      "monitoring_extra": [
+        {
+          "word": "traffic_analysis",
+          "meaning": "Traffic Analysis (การวิเคราะห์ทราฟฟิก): การตรวจสอบข้อมูลที่ไหลผ่านเครือข่าย"
+        },
+        {
+          "word": "packet_sniffer",
+          "meaning": "Packet Sniffer (เครื่องดักแพ็กเก็ต): โปรแกรมสำหรับตรวจสอบข้อมูลในเครือข่าย"
+        },
+        {
+          "word": "dns_security",
+          "meaning": "DNS Security (ความปลอดภัยของ DNS): การป้องกันการปลอมแปลงโดเมน"
+        },
+        {
+          "word": "ipsec",
+          "meaning": "IPSec (Internet Protocol Security): โปรโตคอลเข้ารหัสการสื่อสารในเครือข่าย"
+        },
+        {
+          "word": "wifi_encryption",
+          "meaning": "Wi-Fi Encryption (การเข้ารหัสไวไฟ): การป้องกันข้อมูลในเครือข่ายไร้สาย"
+        },
+        {
+          "word": "honeynet",
+          "meaning": "Honeynet (เครือข่ายหลอกลวง): ระบบจำลองเพื่อดึงดูดผู้โจมตี"
+        },
+        {
+          "word": "vulnerability_scan",
+          "meaning": "Vulnerability Scan (การสแกนช่องโหว่): การตรวจสอบหาจุดอ่อนในระบบ"
+        }
+      ]
+    },
+    "access_control": {
+      "authentication": [
+        {
+          "word": "authentication",
+          "meaning": "Authentication (การยืนยันตัวตน): ตรวจสอบว่าผู้ใช้คือใคร"
+        },
+        {
+          "word": "authorization",
+          "meaning": "Authorization (การอนุญาต): ให้สิทธิ์ผู้ใช้ตามบทบาท"
+        },
+        {
+          "word": "password",
+          "meaning": "Password (รหัสผ่าน): วิธีพื้นฐานในการยืนยันตัวตน"
+        },
+        {
+          "word": "multifactor_auth",
+          "meaning": "Multi-Factor Authentication (การยืนยันหลายขั้นตอน): ใช้หลายวิธีร่วมกันเพื่อความปลอดภัย"
+        },
+        {
+          "word": "biometric",
+          "meaning": "Biometric (ชีวมาตร): ใช้ลายนิ้วมือหรือใบหน้าในการยืนยันตัวตน"
+        }
+      ],
+      "user_management": [
+        {
+          "word": "role_based_access",
+          "meaning": "Role-Based Access (สิทธิ์ตามบทบาท): กำหนดสิทธิ์การเข้าถึงตามตำแหน่งงาน"
+        },
+        {
+          "word": "privilege",
+          "meaning": "Privilege (สิทธิพิเศษ): สิทธิ์เพิ่มเติมของผู้ใช้บางคน"
+        },
+        {
+          "word": "account_lockout",
+          "meaning": "Account Lockout (การล็อกบัญชี): การระงับบัญชีเมื่อมีความพยายามเข้าสู่ระบบผิดหลายครั้ง"
+        },
+        {
+          "word": "session_timeout",
+          "meaning": "Session Timeout (หมดเวลาการใช้งาน): ออกจากระบบอัตโนมัติเมื่อไม่ใช้งาน"
+        },
+        {
+          "word": "access_log",
+          "meaning": "Access Log (บันทึกการเข้าถึง): การเก็บข้อมูลการเข้าใช้งานระบบ"
+        }
+      ],
+      "access_extra": [
+        {
+          "word": "user_provisioning",
+          "meaning": "User Provisioning (การสร้างบัญชีผู้ใช้): กระบวนการเพิ่มผู้ใช้ใหม่ในระบบ"
+        },
+        {
+          "word": "revocation",
+          "meaning": "Revocation (การเพิกถอนสิทธิ์): การยกเลิกสิทธิ์ของผู้ใช้ที่หมดอายุ"
+        },
+        {
+          "word": "user_directory",
+          "meaning": "User Directory (ไดเรกทอรีผู้ใช้): ระบบจัดเก็บข้อมูลบัญชีผู้ใช้"
+        },
+        {
+          "word": "sso_token",
+          "meaning": "SSO Token (โทเค็นเข้าสู่ระบบเดียว): รหัสสำหรับการเข้าสู่ระบบหลายบริการ"
+        },
+        {
+          "word": "authorization_server",
+          "meaning": "Authorization Server (เซิร์ฟเวอร์อนุญาตสิทธิ์): ระบบตรวจสอบสิทธิ์ของผู้ใช้"
+        },
+        {
+          "word": "access_control_list",
+          "meaning": "Access Control List (ACL): รายการควบคุมสิทธิ์ของผู้ใช้"
+        },
+        {
+          "word": "role_assignment",
+          "meaning": "Role Assignment (การกำหนดบทบาท): การมอบหมายหน้าที่ในระบบ"
+        }
+      ],
+      "authorization_extra": [
+        {
+          "word": "auth_server",
+          "meaning": "Auth Server (เซิร์ฟเวอร์ตรวจสอบสิทธิ์): ระบบตรวจสอบการเข้าสู่ระบบของผู้ใช้"
+        },
+        {
+          "word": "biometric_login",
+          "meaning": "Biometric Login (เข้าสู่ระบบด้วยชีวมาตร): ใช้ลายนิ้วมือหรือใบหน้าในการล็อกอิน"
+        },
+        {
+          "word": "token_expiration",
+          "meaning": "Token Expiration (อายุของโทเค็น): เวลาหมดอายุของรหัสการเข้าถึงระบบ"
+        },
+        {
+          "word": "captcha",
+          "meaning": "CAPTCHA (ระบบตรวจสอบมนุษย์): ป้องกันบอทโดยให้ผู้ใช้ยืนยันตน"
+        },
+        {
+          "word": "revoke_access",
+          "meaning": "Revoke Access (เพิกถอนสิทธิ์): การปิดการเข้าถึงของผู้ใช้"
+        },
+        {
+          "word": "account_audit",
+          "meaning": "Account Audit (ตรวจสอบบัญชี): การตรวจสอบกิจกรรมของผู้ใช้"
+        },
+        {
+          "word": "session_security",
+          "meaning": "Session Security (ความปลอดภัยของเซสชัน): ป้องกันการขโมยเซสชันของผู้ใช้"
+        }
+      ]
+    },
+    "threats_and_attacks": {
+      "malware_types": [
+        {
+          "word": "virus",
+          "meaning": "Virus (ไวรัส): โปรแกรมที่แพร่กระจายและทำลายข้อมูล"
+        },
+        {
+          "word": "worm",
+          "meaning": "Worm (เวิร์ม): มัลแวร์ที่แพร่ตัวเองโดยไม่ต้องอาศัยไฟล์อื่น"
+        },
+        {
+          "word": "trojan",
+          "meaning": "Trojan (โทรจัน): โปรแกรมแฝงที่ปลอมเป็นซอฟต์แวร์ปกติ"
+        },
+        {
+          "word": "spyware",
+          "meaning": "Spyware (สปายแวร์): ซอฟต์แวร์ที่แอบเก็บข้อมูลของผู้ใช้"
+        },
+        {
+          "word": "ransomware",
+          "meaning": "Ransomware (เรียกค่าไถ่): มัลแวร์ที่เข้ารหัสข้อมูลเพื่อเรียกเงิน"
+        },
+        {
+          "word": "adware",
+          "meaning": "Adware (โฆษณาแฝง): โปรแกรมที่แสดงโฆษณาโดยไม่ได้รับอนุญาต"
+        },
+        {
+          "word": "rootkit",
+          "meaning": "Rootkit (รูทคิท): ซอฟต์แวร์ที่ซ่อนการทำงานของมัลแวร์"
+        }
+      ],
+      "attack_methods": [
+        {
+          "word": "phishing",
+          "meaning": "Phishing (ฟิชชิ่ง): การหลอกให้ผู้ใช้กรอกข้อมูลสำคัญ"
+        },
+        {
+          "word": "brute_force",
+          "meaning": "Brute Force (การเดารหัส): การสุ่มรหัสผ่านจนกว่าจะถูก"
+        },
+        {
+          "word": "ddos",
+          "meaning": "DDoS (Distributed Denial of Service): การโจมตีที่ทำให้ระบบล่ม"
+        },
+        {
+          "word": "man_in_the_middle",
+          "meaning": "Man-in-the-Middle (แอบดักข้อมูล): ผู้โจมตีดักข้อมูลระหว่างผู้ใช้กับระบบ"
+        },
+        {
+          "word": "sql_injection",
+          "meaning": "SQL Injection (การแทรกโค้ด SQL): การโจมตีฐานข้อมูลผ่านแบบฟอร์มอินพุต"
+        },
+        {
+          "word": "zero_day",
+          "meaning": "Zero-Day (ช่องโหว่ใหม่): การโจมตีก่อนที่ผู้พัฒนาจะรู้ตัว"
+        },
+        {
+          "word": "social_engineering",
+          "meaning": "Social Engineering (วิศวกรรมสังคม): การหลอกลวงเพื่อให้เหยื่อเปิดเผยข้อมูล"
+        }
+      ],
+      "attack_extra": [
+        {
+          "word": "sql_exploit",
+          "meaning": "SQL Exploit (ช่องโหว่ SQL): การใช้คำสั่ง SQL แทรกเพื่อเจาะระบบ"
+        },
+        {
+          "word": "dns_spoofing",
+          "meaning": "DNS Spoofing (ปลอมโดเมน): การเปลี่ยนเส้นทางการเชื่อมต่อไปยังเว็บปลอม"
+        },
+        {
+          "word": "payload",
+          "meaning": "Payload (เนื้อหามัลแวร์): ส่วนของมัลแวร์ที่ทำลายระบบ"
+        },
+        {
+          "word": "exploit_kit",
+          "meaning": "Exploit Kit (ชุดเจาะระบบ): เครื่องมือรวมช่องโหว่เพื่อโจมตี"
+        },
+        {
+          "word": "social_phishing",
+          "meaning": "Social Phishing (การหลอกผ่านโซเชียล): การใช้สื่อสังคมเพื่อหลอกลวงข้อมูล"
+        },
+        {
+          "word": "drive_by_download",
+          "meaning": "Drive-by Download (ดาวน์โหลดอัตโนมัติ): การติดตั้งมัลแวร์โดยไม่รู้ตัว"
+        },
+        {
+          "word": "brute_attack",
+          "meaning": "Brute Attack (การเดารหัส): การเดารหัสผ่านอย่างต่อเนื่อง"
+        }
+      ],
+      "malware_extra": [
+        {
+          "word": "cryptojacking",
+          "meaning": "Cryptojacking (ขุดเหรียญลับ): การใช้คอมพิวเตอร์ผู้อื่นเพื่อขุดเหรียญดิจิทัล"
+        },
+        {
+          "word": "fileless_malware",
+          "meaning": "Fileless Malware (มัลแวร์ไร้ไฟล์): มัลแวร์ที่ทำงานโดยไม่ต้องติดตั้งไฟล์"
+        },
+        {
+          "word": "polymorphic_virus",
+          "meaning": "Polymorphic Virus (ไวรัสกลายพันธุ์): ไวรัสที่เปลี่ยนรูปแบบเพื่อตรวจจับยาก"
+        },
+        {
+          "word": "macro_virus",
+          "meaning": "Macro Virus (ไวรัสแมโคร): แฝงในเอกสารเช่น Word หรือ Excel"
+        },
+        {
+          "word": "worm_spread",
+          "meaning": "Worm Spread (การแพร่กระจายของเวิร์ม): การกระจายตัวของมัลแวร์ผ่านเครือข่าย"
+        },
+        {
+          "word": "malicious_script",
+          "meaning": "Malicious Script (สคริปต์อันตราย): โค้ดที่แฝงการทำงานอันตรายบนเว็บ"
+        },
+        {
+          "word": "spam_bot",
+          "meaning": "Spam Bot (บอทสแปม): โปรแกรมส่งข้อความหรืออีเมลอัตโนมัติ"
+        }
+      ]
+    }
+  },
+   "software_engineering": {
+    "software_development_process": {
+      "sdlc_models": [
+        {
+          "word": "sdlc",
+          "meaning": "SDLC (Software Development Life Cycle): กระบวนการพัฒนาซอฟต์แวร์ตั้งแต่เริ่มจนจบ"
+        },
+        {
+          "word": "waterfall",
+          "meaning": "Waterfall Model (แบบน้ำตก): ขั้นตอนพัฒนาแบบเรียงลำดับจากต้นจนจบ"
+        },
+        {
+          "word": "agile",
+          "meaning": "Agile (แนวคิดแอจไจล์): การพัฒนาแบบยืดหยุ่น ปรับเปลี่ยนได้รวดเร็ว"
+        },
+        {
+          "word": "scrum",
+          "meaning": "Scrum (กระบวนการสกรัม): วิธีทำงานแบบทีมเล็ก ๆ ในรอบสั้น ๆ เรียกว่า Sprint"
+        },
+        {
+          "word": "iteration",
+          "meaning": "Iteration (รอบการพัฒนา): การทำงานซ้ำหลายรอบเพื่อปรับปรุงระบบ"
+        },
+        {
+          "word": "prototype",
+          "meaning": "Prototype (ต้นแบบ): ตัวอย่างระบบที่ใช้แสดงแนวคิดก่อนพัฒนาจริง"
+        },
+        {
+          "word": "kanban",
+          "meaning": "Kanban (คัมบัง): วิธีจัดการงานโดยใช้บอร์ดแบ่งสถานะงาน"
+        }
+      ],
+      "development_principles": [
+        {
+          "word": "design_pattern",
+          "meaning": "Design Pattern (แบบแผนการออกแบบ): แนวทางแก้ปัญหาซ้ำ ๆ ในการออกแบบซอฟต์แวร์"
+        },
+        {
+          "word": "solid",
+          "meaning": "SOLID (หลักการออกแบบ): แนวคิด 5 ข้อในการเขียนโค้ดให้ง่ายต่อการดูแล"
+        },
+        {
+          "word": "dry",
+          "meaning": "DRY (Don't Repeat Yourself): หลักเลี่ยงการเขียนโค้ดซ้ำซ้อน"
+        },
+        {
+          "word": "kpi",
+          "meaning": "KPI (ตัวชี้วัดผลงาน): ใช้วัดประสิทธิภาพของทีมพัฒนา"
+        },
+        {
+          "word": "refactoring",
+          "meaning": "Refactoring (การปรับโครงสร้างโค้ด): ปรับปรุงโค้ดให้ดีขึ้นโดยไม่เปลี่ยนการทำงาน"
+        }
+      ],
+      "development_methods": [
+        {
+          "word": "extreme_programming",
+          "meaning": "Extreme Programming (XP): แนวทางพัฒนาซอฟต์แวร์ที่เน้นการทำงานร่วมกันและการปรับตัวอย่างรวดเร็ว"
+        },
+        {
+          "word": "incremental_model",
+          "meaning": "Incremental Model (แบบเพิ่มทีละส่วน): การพัฒนาซอฟต์แวร์โดยแบ่งออกเป็นส่วนย่อย"
+        },
+        {
+          "word": "spiral_model",
+          "meaning": "Spiral Model (แบบวนซ้ำ): ผสมผสานการวางแผนกับการทดสอบอย่างต่อเนื่อง"
+        },
+        {
+          "word": "devops",
+          "meaning": "DevOps (การทำงานร่วมกันของ Dev และ Ops): ผสานการพัฒนาและการดูแลระบบให้ต่อเนื่อง"
+        },
+        {
+          "word": "pair_programming",
+          "meaning": "Pair Programming (การเขียนโค้ดเป็นคู่): นักพัฒนาสองคนทำงานร่วมกันบนเครื่องเดียว"
+        },
+        {
+          "word": "standup_meeting",
+          "meaning": "Stand-up Meeting (การประชุมยืน): การประชุมสั้น ๆ รายวันของทีมพัฒนา"
+        },
+        {
+          "word": "sprint_review",
+          "meaning": "Sprint Review (การสรุปรอบงาน): การประชุมตรวจผลงานหลังจบแต่ละรอบพัฒนา"
+        }
+      ],
+      "development_tools": [
+        {
+          "word": "ide",
+          "meaning": "IDE (Integrated Development Environment): เครื่องมือรวมสำหรับการพัฒนาโปรแกรม เช่น VS Code"
+        },
+        {
+          "word": "debugger",
+          "meaning": "Debugger (เครื่องมือตรวจบั๊ก): ใช้ตรวจหาข้อผิดพลาดในโค้ด"
+        },
+        {
+          "word": "compiler",
+          "meaning": "Compiler (ตัวแปลภาษา): แปลงโค้ดจากภาษาระดับสูงเป็นภาษาที่คอมพิวเตอร์เข้าใจ"
+        },
+        {
+          "word": "build_tool",
+          "meaning": "Build Tool (เครื่องมือสร้างระบบ): ใช้รวมโค้ดและไฟล์ต่าง ๆ เป็นซอฟต์แวร์ที่ใช้งานได้"
+        },
+        {
+          "word": "docker",
+          "meaning": "Docker (ระบบจำลองแอป): เครื่องมือสร้างสภาพแวดล้อมจำลองสำหรับรันซอฟต์แวร์"
+        },
+        {
+          "word": "ci_tool",
+          "meaning": "CI Tool (เครื่องมือรวมโค้ดอัตโนมัติ): ใช้ในการทดสอบและรวมโค้ด เช่น Jenkins"
+        }
+      ]
+    },
+    "requirements_and_design": {
+      "system_analysis": [
+        {
+          "word": "requirement",
+          "meaning": "Requirement (ความต้องการ): สิ่งที่ผู้ใช้หรือระบบต้องการให้ทำงานได้"
+        },
+        {
+          "word": "feasibility_study",
+          "meaning": "Feasibility Study (การศึกษาความเป็นไปได้): การวิเคราะห์ว่าระบบสามารถทำได้จริงหรือไม่"
+        },
+        {
+          "word": "use_case",
+          "meaning": "Use Case (กรณีการใช้งาน): วิธีที่ผู้ใช้โต้ตอบกับระบบ"
+        },
+        {
+          "word": "user_story",
+          "meaning": "User Story (เรื่องราวผู้ใช้): การเขียนความต้องการในรูปแบบง่าย ๆ"
+        },
+        {
+          "word": "dfd",
+          "meaning": "DFD (Data Flow Diagram): แผนภาพการไหลของข้อมูลในระบบ"
+        },
+        {
+          "word": "erd",
+          "meaning": "ERD (Entity Relationship Diagram): แผนภาพความสัมพันธ์ของข้อมูล"
+        },
+        {
+          "word": "context_diagram",
+          "meaning": "Context Diagram (แผนภาพบริบท): แสดงภาพรวมการทำงานของระบบ"
+        }
+      ],
+      "system_design": [
+        {
+          "word": "uml",
+          "meaning": "UML (Unified Modeling Language): ภาษามาตรฐานใช้ในการออกแบบระบบ"
+        },
+        {
+          "word": "class_diagram",
+          "meaning": "Class Diagram (แผนภาพคลาส): ใช้แสดงโครงสร้างของคลาสและความสัมพันธ์"
+        },
+        {
+          "word": "sequence_diagram",
+          "meaning": "Sequence Diagram (แผนภาพลำดับ): แสดงการสื่อสารระหว่างวัตถุในลำดับเวลา"
+        },
+        {
+          "word": "state_diagram",
+          "meaning": "State Diagram (แผนภาพสถานะ): แสดงสถานะของวัตถุและเหตุการณ์ที่เปลี่ยนแปลงมัน"
+        },
+        {
+          "word": "architecture",
+          "meaning": "Architecture (สถาปัตยกรรมระบบ): โครงสร้างและรูปแบบของซอฟต์แวร์"
+        },
+        {
+          "word": "component",
+          "meaning": "Component (ส่วนประกอบ): หน่วยย่อยที่ทำงานเฉพาะในระบบ"
+        },
+        {
+          "word": "interface",
+          "meaning": "Interface (ส่วนเชื่อมต่อ): จุดที่ระบบหรือโมดูลต่าง ๆ ติดต่อกัน"
+        }
+      ],
+      "system_documentation": [
+        {
+          "word": "requirement_analysis",
+          "meaning": "Requirement Analysis (การวิเคราะห์ความต้องการ): ศึกษาความต้องการของผู้ใช้ก่อนออกแบบระบบ"
+        },
+        {
+          "word": "mockup",
+          "meaning": "Mockup (แบบจำลองหน้าจอ): ภาพตัวอย่างหน้าจอที่ใช้สื่อสารกับผู้ใช้"
+        },
+        {
+          "word": "wireframe",
+          "meaning": "Wireframe (โครงร่างหน้าจอ): แสดงโครงสร้างและตำแหน่งองค์ประกอบของระบบ"
+        },
+        {
+          "word": "storyboard",
+          "meaning": "Storyboard (ลำดับภาพ): ใช้แสดงลำดับการทำงานของระบบในแต่ละขั้นตอน"
+        },
+        {
+          "word": "prototype_testing",
+          "meaning": "Prototype Testing (การทดสอบต้นแบบ): ทดสอบต้นแบบระบบก่อนพัฒนาเต็มรูปแบบ"
+        },
+        {
+          "word": "functional_requirement",
+          "meaning": "Functional Requirement (ความต้องการเชิงหน้าที่): สิ่งที่ระบบต้องทำได้"
+        },
+        {
+          "word": "nonfunctional_requirement",
+          "meaning": "Non-functional Requirement (ความต้องการเชิงคุณภาพ): ลักษณะเช่น ความเร็ว ความปลอดภัย"
+        }
+      ]
+    },
+    "testing_and_quality": {
+      "software_testing": [
+        {
+          "word": "unit_test",
+          "meaning": "Unit Test (ทดสอบหน่วยย่อย): การทดสอบโค้ดส่วนเล็กเพื่อหาข้อผิดพลาด"
+        },
+        {
+          "word": "integration_test",
+          "meaning": "Integration Test (ทดสอบการเชื่อมต่อ): ตรวจสอบว่าระบบย่อยทำงานร่วมกันได้"
+        },
+        {
+          "word": "system_test",
+          "meaning": "System Test (ทดสอบระบบ): ทดสอบระบบทั้งหมดในสภาพแวดล้อมจริง"
+        },
+        {
+          "word": "acceptance_test",
+          "meaning": "Acceptance Test (ทดสอบการยอมรับ): ทดสอบเพื่อให้ลูกค้ายืนยันว่าระบบทำงานถูกต้อง"
+        },
+        {
+          "word": "regression_test",
+          "meaning": "Regression Test (ทดสอบย้อนหลัง): ตรวจสอบว่าการแก้ไขใหม่ไม่ทำให้ของเดิมเสีย"
+        },
+        {
+          "word": "manual_test",
+          "meaning": "Manual Test (ทดสอบด้วยมือ): การทดสอบโดยมนุษย์ไม่ใช่เครื่องมือ"
+        },
+        {
+          "word": "automation_test",
+          "meaning": "Automation Test (ทดสอบอัตโนมัติ): ใช้เครื่องมือช่วยในการทดสอบซ้ำ ๆ"
+        }
+      ],
+      "quality_assurance": [
+        {
+          "word": "qa",
+          "meaning": "QA (Quality Assurance): การรับรองคุณภาพของซอฟต์แวร์"
+        },
+        {
+          "word": "bug_tracking",
+          "meaning": "Bug Tracking (การติดตามข้อผิดพลาด): กระบวนการบันทึกและแก้ไขบั๊ก"
+        },
+        {
+          "word": "test_plan",
+          "meaning": "Test Plan (แผนการทดสอบ): เอกสารที่กำหนดวิธีทดสอบระบบ"
+        },
+        {
+          "word": "test_case",
+          "meaning": "Test Case (กรณีทดสอบ): ตัวอย่างสถานการณ์ที่ใช้ตรวจสอบการทำงานของระบบ"
+        },
+        {
+          "word": "performance_test",
+          "meaning": "Performance Test (ทดสอบสมรรถนะ): การวัดความเร็วและประสิทธิภาพของระบบ"
+        },
+        {
+          "word": "load_test",
+          "meaning": "Load Test (ทดสอบโหลด): ตรวจสอบระบบเมื่อมีผู้ใช้จำนวนมาก"
+        },
+        {
+          "word": "usability_test",
+          "meaning": "Usability Test (ทดสอบการใช้งาน): ตรวจสอบว่าระบบใช้งานง่ายหรือไม่"
+        }
+      ],
+      "test_management": [
+        {
+          "word": "test_environment",
+          "meaning": "Test Environment (สภาพแวดล้อมทดสอบ): ระบบจำลองที่ใช้ในการทดสอบซอฟต์แวร์"
+        },
+        {
+          "word": "test_script",
+          "meaning": "Test Script (สคริปต์ทดสอบ): ชุดคำสั่งที่ใช้ตรวจสอบการทำงานอัตโนมัติ"
+        },
+        {
+          "word": "error_log",
+          "meaning": "Error Log (บันทึกข้อผิดพลาด): รายการบั๊กที่เกิดขึ้นระหว่างการทดสอบ"
+        },
+        {
+          "word": "defect",
+          "meaning": "Defect (ข้อบกพร่อง): ปัญหาที่ทำให้ซอฟต์แวร์ทำงานไม่ถูกต้อง"
+        },
+        {
+          "word": "test_report",
+          "meaning": "Test Report (รายงานผลทดสอบ): เอกสารสรุปผลการทดสอบแต่ละรอบ"
+        },
+        {
+          "word": "smoke_test",
+          "meaning": "Smoke Test (การทดสอบพื้นฐาน): ตรวจสอบเบื้องต้นว่าระบบสามารถทำงานได้"
+        }
+      ],
+      "software_quality": [
+        {
+          "word": "reliability",
+          "meaning": "Reliability (ความน่าเชื่อถือ): ความสามารถของระบบในการทำงานอย่างต่อเนื่อง"
+        },
+        {
+          "word": "maintainability",
+          "meaning": "Maintainability (ความสามารถในการบำรุงรักษา): ระบบสามารถปรับปรุงได้ง่าย"
+        },
+        {
+          "word": "scalability",
+          "meaning": "Scalability (การขยายระบบ): ระบบสามารถรองรับการเติบโตของผู้ใช้"
+        },
+        {
+          "word": "portability",
+          "meaning": "Portability (ความสามารถในการย้ายระบบ): การทำให้ซอฟต์แวร์รันได้หลายแพลตฟอร์ม"
+        },
+        {
+          "word": "security_testing",
+          "meaning": "Security Testing (ทดสอบความปลอดภัย): ตรวจสอบจุดอ่อนของระบบ"
+        }
+      ]
+    },
+    "project_management": {
+      "planning_and_control": [
+        {
+          "word": "project_plan",
+          "meaning": "Project Plan (แผนโครงการ): เอกสารกำหนดขอบเขตและขั้นตอนการทำงาน"
+        },
+        {
+          "word": "timeline",
+          "meaning": "Timeline (เส้นเวลา): กำหนดเวลาการทำงานแต่ละขั้นตอน"
+        },
+        {
+          "word": "milestone",
+          "meaning": "Milestone (หมุดหมายสำคัญ): จุดที่ต้องบรรลุในระหว่างโครงการ"
+        },
+        {
+          "word": "stakeholder",
+          "meaning": "Stakeholder (ผู้มีส่วนได้ส่วนเสีย): บุคคลหรือหน่วยงานที่เกี่ยวข้องกับโครงการ"
+        },
+        {
+          "word": "resource",
+          "meaning": "Resource (ทรัพยากร): สิ่งที่ใช้ในการดำเนินงาน เช่น บุคลากรและอุปกรณ์"
+        },
+        {
+          "word": "budget",
+          "meaning": "Budget (งบประมาณ): เงินที่จัดสรรสำหรับโครงการ"
+        },
+        {
+          "word": "risk_management",
+          "meaning": "Risk Management (การจัดการความเสี่ยง): การคาดการณ์และลดผลกระทบจากความเสี่ยง"
+        }
+      ],
+      "documentation": [
+        {
+          "word": "requirement_doc",
+          "meaning": "Requirement Document (เอกสารความต้องการ): ระบุสิ่งที่ระบบต้องทำ"
+        },
+        {
+          "word": "design_doc",
+          "meaning": "Design Document (เอกสารออกแบบ): แสดงรายละเอียดการออกแบบระบบ"
+        },
+        {
+          "word": "technical_doc",
+          "meaning": "Technical Document (เอกสารเทคนิค): อธิบายการทำงานของระบบในเชิงเทคนิค"
+        },
+        {
+          "word": "user_manual",
+          "meaning": "User Manual (คู่มือผู้ใช้): เอกสารสอนการใช้งานระบบ"
+        },
+        {
+          "word": "meeting_minutes",
+          "meaning": "Meeting Minutes (บันทึกการประชุม): สรุปเนื้อหาการประชุมแต่ละครั้ง"
+        }
+      ],
+      "team_management": [
+        {
+          "word": "team_leader",
+          "meaning": "Team Leader (หัวหน้าทีม): ผู้ดูแลและประสานงานในทีมพัฒนา"
+        },
+        {
+          "word": "communication_plan",
+          "meaning": "Communication Plan (แผนการสื่อสาร): กำหนดวิธีสื่อสารในทีมและกับลูกค้า"
+        },
+        {
+          "word": "progress_tracking",
+          "meaning": "Progress Tracking (ติดตามความคืบหน้า): ตรวจสอบสถานะการทำงานของโครงการ"
+        },
+        {
+          "word": "retrospective",
+          "meaning": "Retrospective (การทบทวนหลังงาน): ประเมินผลหลังจบรอบการทำงาน"
+        },
+        {
+          "word": "burn_down_chart",
+          "meaning": "Burn Down Chart (กราฟความคืบหน้า): แสดงจำนวนงานที่เหลือในแต่ละวัน"
+        }
+      ]
+    },
+    "version_and_deployment": {
+      "version_control": [
+        {
+          "word": "git",
+          "meaning": "Git (ระบบควบคุมเวอร์ชัน): ใช้ติดตามการเปลี่ยนแปลงของซอร์สโค้ด"
+        },
+        {
+          "word": "repository",
+          "meaning": "Repository (ที่เก็บโค้ด): ที่จัดเก็บซอร์สโค้ดของโปรเจกต์"
+        },
+        {
+          "word": "branch",
+          "meaning": "Branch (กิ่งงาน): การแยกส่วนโค้ดเพื่อพัฒนาฟีเจอร์ใหม่"
+        },
+        {
+          "word": "merge",
+          "meaning": "Merge (รวมโค้ด): รวมการเปลี่ยนแปลงจากกิ่งงานกลับเข้าหลัก"
+        },
+        {
+          "word": "commit",
+          "meaning": "Commit (บันทึกการเปลี่ยนแปลง): การบันทึกสถานะของโค้ดใน Git"
+        },
+        {
+          "word": "pull_request",
+          "meaning": "Pull Request (คำขอดึงโค้ด): การเสนอให้รวมโค้ดจากสาขาย่อยเข้าสาขาหลัก"
+        },
+        {
+          "word": "conflict",
+          "meaning": "Conflict (ความขัดแย้ง): ปัญหาที่เกิดเมื่อโค้ดสองส่วนแก้ไฟล์เดียวกัน"
+        }
+      ],
+      "deployment_process": [
+        {
+          "word": "ci_cd",
+          "meaning": "CI/CD (Continuous Integration/Deployment): กระบวนการรวมและปล่อยโค้ดอัตโนมัติ"
+        },
+        {
+          "word": "pipeline",
+          "meaning": "Pipeline (สายงาน): ลำดับขั้นตอนในการทดสอบและปล่อยระบบ"
+        },
+        {
+          "word": "release",
+          "meaning": "Release (การปล่อยซอฟต์แวร์): การนำซอฟต์แวร์ออกสู่ผู้ใช้"
+        },
+        {
+          "word": "rollback",
+          "meaning": "Rollback (ย้อนกลับ): การคืนค่าระบบไปยังเวอร์ชันก่อนหน้า"
+        },
+        {
+          "word": "staging",
+          "meaning": "Staging (สภาพแวดล้อมจำลอง): การทดสอบก่อนปล่อยจริง"
+        },
+        {
+          "word": "production",
+          "meaning": "Production (ระบบจริง): ระบบที่เปิดให้ผู้ใช้ใช้งานจริง"
+        },
+        {
+          "word": "monitoring",
+          "meaning": "Monitoring (การตรวจสอบระบบ): การติดตามประสิทธิภาพและปัญหาหลังปล่อยระบบ"
+        }
+      ],
+      "deployment_management": [
+        {
+          "word": "continuous_deployment",
+          "meaning": "Continuous Deployment (การปล่อยระบบอัตโนมัติ): ปล่อยซอฟต์แวร์ใหม่อย่างต่อเนื่องโดยไม่หยุดระบบ"
+        },
+        {
+          "word": "release_note",
+          "meaning": "Release Note (บันทึกการอัปเดต): รายการการเปลี่ยนแปลงในแต่ละเวอร์ชัน"
+        },
+        {
+          "word": "backup",
+          "meaning": "Backup (สำรองข้อมูล): การเก็บข้อมูลสำคัญก่อนอัปเดตระบบ"
+        },
+        {
+          "word": "rollback_plan",
+          "meaning": "Rollback Plan (แผนย้อนกลับ): ขั้นตอนคืนระบบเมื่อเกิดข้อผิดพลาด"
+        },
+        {
+          "word": "server_configuration",
+          "meaning": "Server Configuration (การตั้งค่าเซิร์ฟเวอร์): การเตรียมเซิร์ฟเวอร์ก่อนติดตั้งระบบ"
+        },
+        {
+          "word": "containerization",
+          "meaning": "Containerization (การบรรจุระบบในคอนเทนเนอร์): ช่วยให้ระบบรันได้เหมือนกันทุกเครื่อง"
+        },
+        {
+          "word": "monitoring_tool",
+          "meaning": "Monitoring Tool (เครื่องมือตรวจสอบ): โปรแกรมที่ช่วยติดตามการทำงานของระบบ"
+        }
+      ]
+    }
+  }
+}
